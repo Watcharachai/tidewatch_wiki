@@ -1,0 +1,11 @@
+{
+  "archive": "mts_gold_2025_2026_asof_2026-11-07.zip",
+  "sha256": "3082922e20d733f456a52ca4e49d531d43a75140bf29967cd3077b03379f6bfd",
+  "bytes": 22205225,
+  "files": 212,
+  "as_of": "2026-11-07T06:16:11.127745+00:00",
+  "native_rows": 86050,
+  "requested_start": "2024-12-31T17:00:00+00:00",
+  "requested_end_exclusive": "2026-12-31T17:00:00+00:00",
+  "restore_from_repository_root": "python -m zipfile -e research/mts_gold/snapshots/mts_gold_2025_2026_asof_2026-11-07.zip research/mts_gold"
+}
