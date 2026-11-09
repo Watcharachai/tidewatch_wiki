@@ -2,11 +2,13 @@
 
 import tempfile
 from pathlib import Path
+import sys
 import unittest
 
 import numpy as np
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / "code"))
 import features as f
 
 

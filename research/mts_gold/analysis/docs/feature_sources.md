@@ -52,8 +52,8 @@ timestamp,available_at,close,volume
 ## Running and interpreting the output
 
 ```bash
-python research/mts_gold/features.py run
-python research/mts_gold/features.py build
+python research/mts_gold/code/features.py run
+python research/mts_gold/code/features.py build
 ```
 
 `run` fetches and builds; `build` recomputes from cached reference CSVs without network. The collector uses the current MTS `data/bars.csv` cutoff, so reference history cannot extend the target sample by itself. `feature_data/manifest.json` records fetched source URLs, hashes, coverage and still-pending exports. `feature_artifacts/market_features_<timeframe>.csv.gz` contains one wide matrix per timeframe, `coverage.csv` reports non-null join rates, and `manifest.json` lists row counts and output hashes. Each matrix includes both MTS purities as rows; `symbol` selects the forecast target. Unavailable features are null. The feature matrix is descriptive input preparation; no forecast labels are created here and no predictive accuracy is claimed.
@@ -62,5 +62,5 @@ The versioned `feature_artifacts/reference_sources_asof_2026-11-07.zip` preserve
 
 ```bash
 python -m zipfile -e research/mts_gold/feature_artifacts/reference_sources_asof_2026-11-07.zip research/mts_gold
-python research/mts_gold/features.py build
+python research/mts_gold/code/features.py build
 ```

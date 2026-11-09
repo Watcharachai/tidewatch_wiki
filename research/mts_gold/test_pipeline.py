@@ -1,6 +1,7 @@
 """Run: python -m unittest discover -s research/mts_gold -v"""
 import json
 from pathlib import Path
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -9,7 +10,9 @@ from urllib.error import URLError
 import numpy as np
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / "code"))
 import pipeline as p
+import features as f
 
 
 def candles(times, closes=None):
@@ -17,6 +20,18 @@ def candles(times, closes=None):
     prices = np.array(closes if closes is not None else np.arange(len(ts)) + 100, dtype=float)
     return pd.DataFrame({"timestamp": ts, "open": prices, "high": prices + 2,
                          "low": prices - 2, "close": prices + 1, "source_count": 1})
+
+
+class IntegratedRunTests(unittest.TestCase):
+    def test_run_collects_targets_then_features(self):
+        calls = []
+        with patch("sys.argv", ["pipeline.py", "run", "--as-of", "2025-01-02T00:00:00Z"]), \
+             patch.object(p, "fetch_dataset", side_effect=lambda *a: calls.append("target_fetch")), \
+             patch.object(p, "analyze", side_effect=lambda *a, **k: calls.append("target_analyze")), \
+             patch.object(f, "fetch", side_effect=lambda *a: calls.append("feature_fetch")), \
+             patch.object(f, "build", side_effect=lambda *a: calls.append("feature_build")):
+            p.main()
+        self.assertEqual(calls, ["target_fetch", "target_analyze", "feature_fetch", "feature_build"])
 
 
 class HistoryTests(unittest.TestCase):

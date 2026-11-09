@@ -19,7 +19,7 @@ import pandas as pd
 
 from pipeline import MTSClient, clean_bars, utc, write_json
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 LAGS = (1, 5, 30)
 FREQS = {"15m": ("15min", 15), "30m": ("30min", 30), "60m": ("60min", 60),
          "1d": ("1D", 1440), "7d": ("W-MON", 10080)}

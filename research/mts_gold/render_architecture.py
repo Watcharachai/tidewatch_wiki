@@ -7,8 +7,8 @@ from docx.shared import Inches, Pt
 
 
 ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "Gold_Price_Predictive_Model_Architecture.md"
-TARGET = ROOT / "Gold_Price_Predictive_Model_Architecture.docx"
+SOURCE = ROOT / "analysis" / "docs" / "Gold_Price_Predictive_Model_Architecture.md"
+TARGET = ROOT / "analysis" / "docs" / "Gold_Price_Predictive_Model_Architecture.docx"
 
 
 def main() -> None:

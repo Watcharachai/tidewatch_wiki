@@ -383,8 +383,8 @@ def make_report(returns: pd.DataFrame, summary: pd.DataFrame, quality: list[dict
               "## Artifacts", "", "- `return_summary.csv`: all lags, timeframes, and separate 2025/2026/full-period summaries.",
               "- `coverage.csv`: observed gaps, flat prices and discarded partial intraday buckets.",
               "- `daily_alignment_gaps.csv`: source daily dates present for only one gold series.",
-              "- `../data/bars.csv` and `../data/returns.csv.gz`: normalized candles and every simple/log return, with elapsed minutes.",
-              "- `../data/manifest.json`, `source_metadata.json`, and `raw/`: exact requests, retrieval times, raw-response hashes and reusable cached responses.", "",
+              "- `../../data/bars.csv` and `../../data/returns.csv.gz`: normalized candles and every simple/log return, with elapsed minutes.",
+              "- `../../data/manifest.json`, `source_metadata.json`, and `raw/`: exact requests, retrieval times, raw-response hashes and reusable cached responses.", "",
               "![Prices and daily return analysis](prices_and_daily_returns.png)", "", "![Return volatility by lag and timeframe](return_volatility.png)", ""]
     (reports / "analysis.md").write_text("\n".join(lines))
 
@@ -419,15 +419,18 @@ def main() -> None:
     parser.add_argument("--start", default="2025-01-01", help="Inclusive; naive dates use Asia/Bangkok")
     parser.add_argument("--end", default="2027-01-01", help="Exclusive; default covers 2025 and 2026")
     parser.add_argument("--as-of", help="UTC-aware cutoff; defaults to current UTC time")
-    root = Path(__file__).resolve().parent
+    root = Path(__file__).resolve().parent.parent
     parser.add_argument("--output", type=Path, default=root / "data")
-    parser.add_argument("--reports", type=Path, default=root / "reports")
+    parser.add_argument("--reports", type=Path, default=root / "analysis" / "reports")
+    parser.add_argument("--no-features", action="store_true", help="Skip reference collection and feature building during run")
     parser.add_argument("--refresh", action="store_true", help="Refetch cached completed request windows")
     parser.add_argument("--pause", type=float, default=.15, help="Seconds between uncached requests")
     parser.add_argument("--no-plots", action="store_true")
     args = parser.parse_args()
     if args.pause < 0:
         parser.error("--pause must be nonnegative")
+    if args.command == "run" and not args.no_features and args.output.resolve() != (root / "data").resolve():
+        parser.error("integrated feature collection requires the default --output; use --no-features with a custom output")
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
     if args.command in ("fetch", "run"):
         start, end = utc(args.start), utc(args.end)
@@ -437,6 +440,10 @@ def main() -> None:
         fetch_dataset(client, start, end, as_of, args.output)
     if args.command in ("analyze", "run"):
         analyze(args.output, args.reports, plots=not args.no_plots)
+    if args.command == "run" and not args.no_features:
+        from features import fetch as fetch_features, build as build_features
+        fetch_features(root, as_of)
+        build_features(root)
 
 
 if __name__ == "__main__":

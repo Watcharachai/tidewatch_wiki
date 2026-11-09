@@ -1,33 +1,33 @@
 # Direct MTS gold forecasting research — data and returns
 
-This is a standalone Python research pipeline based on the Tidewatch wiki. It collects **actual MTS public chart OHLC** for **GLD965 (96.5%)** and **GLD9999 (99.99%, confirmed by the user)**. Both source symbols quote **THB**. It produces **15m, 30m, 60m, 1d, and 7d** candles and close returns at lags **1, 3, 7, 14, 30**. Model training is a later stage. The updated [forecast architecture](Gold_Price_Predictive_Model_Architecture.md) is available as an editable Markdown source and a [DOCX](Gold_Price_Predictive_Model_Architecture.docx). To regenerate the DOCX after editing the source, install `python-docx>=1.2,<2` and run `python research/mts_gold/render_architecture.py`.
+This is a standalone Python research pipeline based on the Tidewatch wiki. It collects **actual MTS public chart OHLC** for **GLD965 (96.5%)** and **GLD9999 (99.99%, confirmed by the user)**. Both source symbols quote **THB**. It produces **15m, 30m, 60m, 1d, and 7d** candles and close returns at lags **1, 3, 7, 14, 30**. Model training is a later stage. The updated [forecast architecture](analysis/docs/Gold_Price_Predictive_Model_Architecture.md) is available as an editable Markdown source and a [DOCX](analysis/docs/Gold_Price_Predictive_Model_Architecture.docx). To regenerate the DOCX after editing the source, install `python-docx>=1.2,<2` and run `python research/mts_gold/render_architecture.py`.
 
-The [quantitative feature collector](feature_sources.md) adds 1/5/30 lags for both MTS gold series and available gold, cross-asset, macro and index references. It lists the historical futures, SET, silver and Singapore exports still needed from an approved source.
+The [quantitative feature collector](analysis/docs/feature_sources.md) adds 1/5/30 lags for both MTS gold series and available gold, cross-asset, macro and index references. It lists the historical futures, SET, silver and Singapore exports still needed from an approved source.
 
 Run from the repository root, with Python 3.10+:
 
 ```bash
 python -m venv .venv
 .venv/bin/pip install -r research/mts_gold/requirements.txt
-.venv/bin/python research/mts_gold/pipeline.py run --start 2025-01-01 --end 2027-01-01
+.venv/bin/python research/mts_gold/code/pipeline.py run --start 2025-01-01 --end 2027-01-01
 ```
 
 `--end` is exclusive, so the defaults request all of 2025 and 2026. Naive dates use **Asia/Bangkok**. The pipeline clamps collection to the current time and includes only completed candles. Because this work began on 7 November 2026, 2026 is year-to-date; later 2026 observations can be collected by rerunning. No future data are invented.
 
 ```bash
 # Explicit reproducible analysis cutoff; cannot exceed the actual current time.
-python research/mts_gold/pipeline.py run --as-of 2026-11-07T00:00:00Z
+python research/mts_gold/code/pipeline.py run --as-of 2026-11-07T00:00:00Z
 # Resume collection after interruption; successful requests are cached.
-python research/mts_gold/pipeline.py fetch
+python research/mts_gold/code/pipeline.py fetch
 # Recompute all derived candles and analysis without network access.
-python research/mts_gold/pipeline.py analyze
+python research/mts_gold/code/pipeline.py analyze
 # Explicitly reload cached responses, for example to inspect source revisions.
-python research/mts_gold/pipeline.py run --refresh
+python research/mts_gold/code/pipeline.py run --refresh
 # Validation uses unittest and does not contact MTS.
 python -m unittest discover -s research/mts_gold -v
 ```
 
-The data client uses Python's standard-library HTTP client, inherited proxy/CA configuration and TLS verification. Runtime dependencies are pandas, NumPy and Matplotlib. `--output` and `--reports` select artifact directories. `--no-plots` skips Matplotlib rendering.
+The data client uses Python's standard-library HTTP client, inherited proxy/CA configuration and TLS verification. Runtime dependencies are pandas, NumPy and Matplotlib. `--output` and `--reports` select target artifact directories. The default `run` command also fetches and builds reference features after the MTS target analysis; it requires the default `--output` path. `--no-features` skips that stage and permits a custom output path. `fetch` collects MTS target data only, and `analyze` rebuilds the target return report offline. Run `python research/mts_gold/code/features.py build` for an offline feature rebuild. `--no-plots` skips Matplotlib rendering.
 
 ## Source and collection
 
@@ -72,19 +72,19 @@ For example, `return_3` on `15m` spans 45 minutes in an uninterrupted session; o
 | `data/native_bars.csv` | Native 15m/daily OHLC, provenance and completion boundaries |
 | `data/bars.csv` | Both gold series across all five requested timeframes |
 | `data/returns.csv.gz` | All candles plus all simple/log returns and actual elapsed minutes |
-| `reports/return_summary.csv` | N, mean, median, sample std, quantiles, extrema, skew, excess kurtosis, positive/zero fractions, elapsed times; by year and pooled |
-| `reports/coverage.csv` | First/last observation, counts, observed gaps, flat-price fraction and discarded intraday buckets |
-| `reports/daily_alignment_gaps.csv` | Daily dates observed for only one of the two source series |
-| `reports/analysis.md` | Findings, definitions, limitations and charts |
+| `analysis/reports/return_summary.csv` | N, mean, median, sample std, quantiles, extrema, skew, excess kurtosis, positive/zero fractions, elapsed times; by year and pooled |
+| `analysis/reports/coverage.csv` | First/last observation, counts, observed gaps, flat-price fraction and discarded intraday buckets |
+| `analysis/reports/daily_alignment_gaps.csv` | Daily dates observed for only one of the two source series |
+| `analysis/reports/analysis.md` | Findings, definitions, limitations and charts |
 
 `data/` is ignored by Git to keep generated working files separate from wiki source control. The complete collected dataset and raw-response cache are saved in the versioned [7 November 2026 snapshot](snapshots/mts_gold_2025_2026_asof_2026-11-07.zip), with its SHA-256 and collection metadata in [snapshot.json](snapshots/snapshot.json). Restore it from the repository root before running an offline analysis:
 
 ```bash
 python -m zipfile -e research/mts_gold/snapshots/mts_gold_2025_2026_asof_2026-11-07.zip research/mts_gold
-python research/mts_gold/pipeline.py analyze
+python research/mts_gold/code/pipeline.py analyze
 ```
 
-Generated reports are reviewable in `reports/`. Bars missing from an open session cannot be distinguished from closures without a verified historical calendar; coverage measures **observed gaps**, not a promised missing-bar percentage. Raw UDF data expose OHLC only: bid/ask, quote-side semantics and weight basis are not specified, and returns exclude spreads and fees.
+Generated reports are reviewable in `analysis/reports/`. Bars missing from an open session cannot be distinguished from closures without a verified historical calendar; coverage measures **observed gaps**, not a promised missing-bar percentage. Raw UDF data expose OHLC only: bid/ask, quote-side semantics and weight basis are not specified, and returns exclude spreads and fees.
 
 ## Tidewatch integration and next model stage
 

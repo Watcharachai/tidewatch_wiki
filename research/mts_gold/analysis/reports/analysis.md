@@ -118,8 +118,8 @@ Returns in the data are decimal fractions; the table and summary columns ending 
 - `return_summary.csv`: all lags, timeframes, and separate 2025/2026/full-period summaries.
 - `coverage.csv`: observed gaps, flat prices and discarded partial intraday buckets.
 - `daily_alignment_gaps.csv`: source daily dates present for only one gold series.
-- `../data/bars.csv` and `../data/returns.csv.gz`: normalized candles and every simple/log return, with elapsed minutes.
-- `../data/manifest.json`, `source_metadata.json`, and `raw/`: exact requests, retrieval times, raw-response hashes and reusable cached responses.
+- `../../data/bars.csv` and `../../data/returns.csv.gz`: normalized candles and every simple/log return, with elapsed minutes.
+- `../../data/manifest.json`, `source_metadata.json`, and `raw/`: exact requests, retrieval times, raw-response hashes and reusable cached responses.
 
 ![Prices and daily return analysis](prices_and_daily_returns.png)
 
