@@ -2,3 +2,6 @@ __pycache__/
 *.py[cod]
 .venv/
 research/mts_gold/data/
+research/mts_gold/feature_data/
+research/mts_gold/external/
+research/mts_gold/feature_artifacts/market_features.csv.gz

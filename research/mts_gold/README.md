@@ -2,6 +2,8 @@
 
 This is a standalone Python research pipeline based on the Tidewatch wiki. It collects **actual MTS public chart OHLC** for **GLD965 (96.5%)** and **GLD9999 (99.99%, confirmed by the user)**. Both source symbols quote **THB**. It produces **15m, 30m, 60m, 1d, and 7d** candles and close returns at lags **1, 3, 7, 14, 30**. Model training is a later stage. The updated [forecast architecture](Gold_Price_Predictive_Model_Architecture.md) is available as an editable Markdown source and a [DOCX](Gold_Price_Predictive_Model_Architecture.docx). To regenerate the DOCX after editing the source, install `python-docx>=1.2,<2` and run `python research/mts_gold/render_architecture.py`.
 
+The [quantitative feature collector](feature_sources.md) adds 1/5/30 lags for both MTS gold series and available gold, cross-asset, macro and index references. It lists the historical futures, SET, silver and Singapore exports still needed from an approved source.
+
 Run from the repository root, with Python 3.10+:
 
 ```bash

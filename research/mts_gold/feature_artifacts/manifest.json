@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-11-07T00:00:00+00:00",
+  "rows": 148796,
+  "files": [
+    {
+      "file": "market_features_15m.csv.gz",
+      "timeframe": "15m",
+      "rows": 85103,
+      "columns": 246,
+      "sha256": "c86355c3622c6a97139a1e9774ccff90aba6f726a6a1cfe2d9a1150d980a08b1"
+    },
+    {
+      "file": "market_features_30m.csv.gz",
+      "timeframe": "30m",
+      "rows": 42056,
+      "columns": 246,
+      "sha256": "6af46fa63b1f89a4f2f4dc495ddcbd1b884bdda3bc5792570c58360eb4fa2dbf"
+    },
+    {
+      "file": "market_features_60m.csv.gz",
+      "timeframe": "60m",
+      "rows": 20500,
+      "columns": 246,
+      "sha256": "078a62b03245a656f56f7e662630007fd01ef87b1eb8913501cadb56266d8de5"
+    },
+    {
+      "file": "market_features_1d.csv.gz",
+      "timeframe": "1d",
+      "rows": 947,
+      "columns": 202,
+      "sha256": "baf1b0f5d07ca1195f1464882d6bca801049d84e0afe79480301f2ea49c49cdd"
+    },
+    {
+      "file": "market_features_7d.csv.gz",
+      "timeframe": "7d",
+      "rows": 190,
+      "columns": 246,
+      "sha256": "d9373f27bbfb3e64dd50f6ac18a2ca41f56fee8936b6de1a7e2df753663ba9d1"
+    }
+  ],
+  "lags": [
+    1,
+    5,
+    30
+  ],
+  "pending_external": {
+    "us_gold_future": "CME/COMEX gold futures: continuous-contract roll, exchange and volume definition required",
+    "sg_gold_reference": "Singapore venue gold spot/future: venue, contract, currency and license required",
+    "silver_spot": "Silver spot: currency/weight basis and quote side required",
+    "silver_future": "Silver futures: continuous-contract roll and exchange required",
+    "set_index": "SET Thailand index: official/licensed historical export required"
+  }
+}

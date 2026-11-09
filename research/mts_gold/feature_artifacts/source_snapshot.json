@@ -1,0 +1,8 @@
+{
+  "archive": "reference_sources_asof_2026-11-07.zip",
+  "sha256": "728e460c469349015b43bdc58c903af8c8e74b4693eaa778027476c47a9fe1c6",
+  "bytes": 9933666,
+  "files": 330,
+  "as_of": "2026-11-07T00:00:00+00:00",
+  "restore_from_repository_root": "python -m zipfile -e research/mts_gold/feature_artifacts/reference_sources_asof_2026-11-07.zip research/mts_gold"
+}
