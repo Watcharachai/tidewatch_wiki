@@ -312,7 +312,7 @@ def build(root: Path) -> None:
         # Both direct MTS purities are present on every target row.
         for symbol, name in (("GLD965", "mts965"), ("GLD9999", "mts9999")):
             source = group.loc[group.symbol.eq(symbol), ["timestamp", "available_at", "close"]]
-            group = asof_join(group, source, f"{name}_{tf}", pd.Timedelta(days=4 if tf in ("1d", "7d") else 1))
+            group = asof_join(group, source, f"{name}_{tf}", pd.Timedelta(days=9 if tf == "7d" else (4 if tf == "1d" else 1)))
         for (name, source_tf), source in available.items():
             if source_tf != tf and source_tf != "1d":
                 continue

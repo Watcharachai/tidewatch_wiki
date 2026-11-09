@@ -42,6 +42,14 @@ class FeatureTests(unittest.TestCase):
         self.assertEqual(joined.xaut_15m_close.iloc[1], 100)
         self.assertTrue(pd.isna(joined.xaut_15m_close.iloc[2]))
 
+    def test_completed_weekly_target_is_available_after_seven_days(self):
+        source = pd.DataFrame({"timestamp": pd.to_datetime(["2025-01-06T00:00Z"], utc=True),
+                               "available_at": pd.to_datetime(["2025-01-13T00:00Z"], utc=True),
+                               "close": [100.]})
+        target = pd.DataFrame({"available_at": pd.to_datetime(["2025-01-13T00:00Z"], utc=True)})
+        joined = f.asof_join(target, source, "mts965_7d", pd.Timedelta(days=9))
+        self.assertEqual(joined.mts965_7d_close.iloc[0], 100)
+
     def test_incomplete_binance_bucket_is_dropped(self):
         source = sample(pd.date_range("2025-01-01T00:00Z", periods=8, freq="15min"), volume=True)
         full = f.aggregate_binance(source, "60m")
