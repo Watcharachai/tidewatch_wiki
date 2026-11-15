@@ -87,6 +87,44 @@ def plot_results(frames: dict[tuple[str, str], pd.DataFrame], output: Path) -> N
     plt.close(fig)
 
 
+def plot_histograms(frames: dict[tuple[str, str], pd.DataFrame], out: Path) -> None:
+    for full_range in (False, True):
+        fig, axes = plt.subplots(3, 2, figsize=(14, 12), constrained_layout=True)
+        for row, timeframe in enumerate(("30m", "60m", "1d")):
+            pooled = pd.concat([100 * frames[(symbol, timeframe)].simple_return.dropna()
+                                for symbol in ("GLD965", "GLD9999")])
+            limits = (pooled.min(), pooled.max()) if full_range else (pooled.quantile(.005), pooled.quantile(.995))
+            edges = np.linspace(*limits, 101)
+            for column, (symbol, color) in enumerate((("GLD965", "#b98221"), ("GLD9999", "#244875"))):
+                axis = axes[row, column]
+                values = 100 * frames[(symbol, timeframe)].simple_return.dropna()
+                shown = values if full_range else values.loc[values.between(*limits)]
+                axis.hist(shown, bins=edges, color=color, alpha=.83, edgecolor="white", linewidth=.2)
+                axis.axvline(values.mean(), color="#b51b2b", linestyle="--", linewidth=1.2, label="Mean")
+                axis.axvline(values.median(), color="black", linestyle=":", linewidth=1.2, label="Median")
+                if full_range:
+                    axis.set_yscale("log")
+                note = (f"N = {len(values):,}\nMean = {values.mean():.4f}%\n"
+                        f"Median = {values.median():.4f}%\n"
+                        f"Variance = {values.var():.5f} pp²\n"
+                        f"Skewness = {values.skew():.2f}\n"
+                        f"Excess kurtosis = {values.kurt():.1f}")
+                axis.text(.98, .96, note, ha="right", va="top", transform=axis.transAxes,
+                          fontsize=8, bbox={"facecolor": "white", "edgecolor": "#aaa", "alpha": .92})
+                axis.set_title(f"{symbol} — {timeframe}")
+                axis.set_xlabel("One-period simple return (%)")
+                axis.set_ylabel("Count" + (" (log scale)" if full_range else ""))
+                axis.grid(alpha=.2)
+                if row == 0 and column == 0:
+                    axis.legend(loc="upper left", fontsize=8)
+        caption = ("Full observed return range; logarithmic count axis" if full_range else
+                   "Central 99% of returns shown; statistics use the full sample")
+        fig.suptitle("MTS gold one-period return histograms — " + caption, fontsize=13)
+        filename = "return_histograms_full_range.png" if full_range else "return_histograms_central.png"
+        fig.savefig(out / filename, dpi=150)
+        plt.close(fig)
+
+
 def build(root: Path = ROOT) -> None:
     data = pd.read_csv(root / "data" / "bars.csv", parse_dates=["timestamp"],
                        usecols=["timestamp", "close", "symbol", "timeframe"])
@@ -114,6 +152,7 @@ def build(root: Path = ROOT) -> None:
     retstats.to_csv(out / "one_period_return_statistics.csv", index=False)
     pd.DataFrame(months).to_csv(out / "monthly_price_trend.csv", index=False)
     plot_results(frames, out / "price_return_modeling.png")
+    plot_histograms(frames, out)
     write_report(levels, retstats, out)
 
 
@@ -143,6 +182,10 @@ def write_report(levels: pd.DataFrame, stats: pd.DataFrame, out: Path) -> None:
                      f"{row.excess_kurtosis_simple:.1f} | {row.rolling_10_std_median_pct:.3f}% / {row.rolling_10_std_p95_pct:.3f}% |")
     lines += ["", "The full `one_period_return_statistics.csv` also gives THB changes, 1st/99th percentiles, zero-return rates, simple versus log-return differences, and lag-1 return/squared-return correlations. Annual summaries assign a return to the current bar's Bangkok year; early-year returns can reference the prior year.", "",
               "The 2026 intraday return variance is roughly **2.5–2.7×** its 2025 value across the two purities and both selected intervals. The level trend and the return-volatility regime changed together. Simple and log returns differ very little on ordinary intraday bars (mean absolute difference about **0.00015 percentage points** at 30m and **0.00030** at 60m), but both retain extreme observations.", "",
+              "## Return histograms", "",
+              "Each panel includes mean, median, sample variance, skewness and **excess** kurtosis computed from all observed returns. The central view displays the pooled 0.5th–99.5th percentile range within each timeframe so the shape near zero is readable; the full-range view uses a logarithmic count axis to reveal rare extremes. Intraday returns cross no missing-bar gap.", "",
+              "![Central return histograms for GLD965 and GLD9999 at 30m, 60m and 1d](return_histograms_central.png)", "",
+              "![Full-range return histograms with logarithmic counts](return_histograms_full_range.png)", "",
               "## Modeling decision", "",
               "- **Preferred dependent variable:** next contiguous 30m or 60m **log return**, `ln(close[t+1]/close[t])`, separately for GLD965 and GLD9999. Predicting raw THB close directly would make the large level trend and differing purity scales dominate the loss. Log return is additive across time and converts to a price forecast as `close[t] × exp(predicted_log_return)`.",
               "- The saved training tables currently use simple `y_next_return`. Convert with `np.log1p(y_next_return)`; the two are close for ordinary bars, while log return handles compounding and large moves more consistently. This transform uses only the future outcome for the label, never as an input.",

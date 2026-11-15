@@ -40,6 +40,14 @@ The full `one_period_return_statistics.csv` also gives THB changes, 1st/99th per
 
 The 2026 intraday return variance is roughly **2.5–2.7×** its 2025 value across the two purities and both selected intervals. The level trend and the return-volatility regime changed together. Simple and log returns differ very little on ordinary intraday bars (mean absolute difference about **0.00015 percentage points** at 30m and **0.00030** at 60m), but both retain extreme observations.
 
+## Return histograms
+
+Each panel includes mean, median, sample variance, skewness and **excess** kurtosis computed from all observed returns. The central view displays the pooled 0.5th–99.5th percentile range within each timeframe so the shape near zero is readable; the full-range view uses a logarithmic count axis to reveal rare extremes. Intraday returns cross no missing-bar gap.
+
+![Central return histograms for GLD965 and GLD9999 at 30m, 60m and 1d](return_histograms_central.png)
+
+![Full-range return histograms with logarithmic counts](return_histograms_full_range.png)
+
 ## Modeling decision
 
 - **Preferred dependent variable:** next contiguous 30m or 60m **log return**, `ln(close[t+1]/close[t])`, separately for GLD965 and GLD9999. Predicting raw THB close directly would make the large level trend and differing purity scales dominate the loss. Log return is additive across time and converts to a price forecast as `close[t] × exp(predicted_log_return)`.

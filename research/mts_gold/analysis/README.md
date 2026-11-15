@@ -4,6 +4,7 @@
 - [Feature collection report](reports/feature_report.md) and the full [feature coverage table](../feature_artifacts/coverage.csv).
 - [30m/60m training dataset report](reports/training_dataset_summary.md), with detailed [summary statistics](../training_artifacts/summary_statistics.csv) and [null rates](../training_artifacts/null_rates.csv).
 - [Price, return, extrema and variance analysis](reports/price_return_modeling.md), with [one-period return statistics](reports/one_period_return_statistics.csv), [peak/drawdown dates](reports/price_extrema_drawdown.csv), [monthly trends](reports/monthly_price_trend.csv) and a [trend/volatility chart](reports/price_return_modeling.png).
+- [Return histograms: central range](reports/return_histograms_central.png) and [full range with rare extremes](reports/return_histograms_full_range.png), for GLD965 and GLD9999 at 30m, 60m and daily intervals.
 - [Forecast architecture](docs/Gold_Price_Predictive_Model_Architecture.md), also available as [DOCX](docs/Gold_Price_Predictive_Model_Architecture.docx).
 - [Feature source and export specification](docs/feature_sources.md).
 
