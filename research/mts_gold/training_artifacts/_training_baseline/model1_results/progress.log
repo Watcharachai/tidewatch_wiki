@@ -1,0 +1,37 @@
+2026-11-15 15:02:10,373 GLD965 F1: materializing fold and profiling 313 candidates
+2026-11-15 15:02:10,544 GLD965 F1: running VARCLUS on train-only correlation structure
+2026-11-15 15:02:29,580 GLD965 F1 complete
+2026-11-15 15:02:29,580 GLD965 F2: materializing fold and profiling 313 candidates
+2026-11-15 15:02:29,772 GLD965 F2: running VARCLUS on train-only correlation structure
+2026-11-15 15:02:48,906 GLD965 F2 complete
+2026-11-15 15:02:48,906 GLD965 F3: materializing fold and profiling 313 candidates
+2026-11-15 15:02:49,160 GLD965 F3: running VARCLUS on train-only correlation structure
+2026-11-15 15:03:22,317 GLD965 F3 complete
+2026-11-15 15:03:22,317 GLD965 F4: materializing fold and profiling 313 candidates
+2026-11-15 15:03:22,593 GLD965 F4: running VARCLUS on train-only correlation structure
+2026-11-15 15:04:08,518 GLD965 F4 complete
+2026-11-15 15:04:08,518 GLD965 F5: materializing fold and profiling 313 candidates
+2026-11-15 15:04:08,805 GLD965 F5: running VARCLUS on train-only correlation structure
+2026-11-15 15:04:43,280 GLD965 F5 complete
+2026-11-15 15:04:43,281 GLD965 F6: materializing fold and profiling 313 candidates
+2026-11-15 15:04:43,584 GLD965 F6: running VARCLUS on train-only correlation structure
+2026-11-15 15:05:48,388 GLD965 F6 complete
+2026-11-15 15:05:48,940 GLD9999 F1: materializing fold and profiling 313 candidates
+2026-11-15 15:05:49,081 GLD9999 F1: running VARCLUS on train-only correlation structure
+2026-11-15 15:06:10,573 GLD9999 F1 complete
+2026-11-15 15:06:10,573 GLD9999 F2: materializing fold and profiling 313 candidates
+2026-11-15 15:06:10,734 GLD9999 F2: running VARCLUS on train-only correlation structure
+2026-11-15 15:06:27,124 GLD9999 F2 complete
+2026-11-15 15:06:27,124 GLD9999 F3: materializing fold and profiling 313 candidates
+2026-11-15 15:06:27,339 GLD9999 F3: running VARCLUS on train-only correlation structure
+2026-11-15 15:06:55,865 GLD9999 F3 complete
+2026-11-15 15:06:55,865 GLD9999 F4: materializing fold and profiling 313 candidates
+2026-11-15 15:06:56,103 GLD9999 F4: running VARCLUS on train-only correlation structure
+2026-11-15 15:07:36,101 GLD9999 F4 complete
+2026-11-15 15:07:36,101 GLD9999 F5: materializing fold and profiling 313 candidates
+2026-11-15 15:07:36,370 GLD9999 F5: running VARCLUS on train-only correlation structure
+2026-11-15 15:08:11,828 GLD9999 F5 complete
+2026-11-15 15:08:11,828 GLD9999 F6: materializing fold and profiling 313 candidates
+2026-11-15 15:08:12,106 GLD9999 F6: running VARCLUS on train-only correlation structure
+2026-11-15 15:09:07,538 GLD9999 F6 complete
+2026-11-15 15:09:18,045 Experiment complete; notebook/Excel/document outputs ready

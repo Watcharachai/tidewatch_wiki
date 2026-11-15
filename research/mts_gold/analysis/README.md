@@ -1,5 +1,6 @@
 # MTS gold analysis and documents
 
+- [Untuned Model 1 and feature-review results](../training_artifacts/_training_baseline/Model1_Baseline_Summary.md): an executed notebook, Excel diagnostics and DOCX summary alongside the baseline tables. Feature selection remains manual.
 - [Current all-date 60m two-model baseline](../training_artifacts/_training_baseline/README.md): feature groups, rolling-stat definitions, transformed targets and chronological-fold usage. This supersedes the fixed year split for the new experiment.
 - [Model readiness summary](docs/MTS_Model_Readiness_Summary.md), also available as an editable [DOCX](docs/MTS_Model_Readiness_Summary.docx). It combines training statistics, missingness, price/return trends, histograms and the proposed first-model design.
 - [Return analysis](reports/analysis.md), its [summary](reports/return_summary.csv), [coverage](reports/coverage.csv), [daily alignment gaps](reports/daily_alignment_gaps.csv), and charts in `reports/`.

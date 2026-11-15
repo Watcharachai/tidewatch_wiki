@@ -1,6 +1,14 @@
 # All-date 60m two-model baseline dataset
 
-Prepared for separate GLD965 and GLD9999 experiments using every available date in the current research snapshot. There is **no fixed 2025/2026 split**, no fitted imputer/scaler, and no global feature selection. The existing snapshot ends on 7 November 2026; this build does not fetch newer observations.
+## Untuned Model 1 and manual feature review
+
+The executed [training notebook](Model1_Training_Baseline.ipynb), [Excel review workbook](Model1_Baseline_Review.xlsx), and [results/development summary](Model1_Baseline_Summary.md) ([DOCX](Model1_Baseline_Summary.docx)) contain the baseline experiment. No candidate columns are deleted. The primary estimator uses the existing 23-feature core; a separate all-313-feature diagnostic estimator supplies wider permutation importance.
+
+The workbook includes per-fold null-rate flags (>=20%), zero variance, VIF, VARCLUS, permutation importance, coefficients, scores, and editable `manual_decision`/`manual_notes` columns. All inputs and transformations are fitted on chronological training folds only. Once validation diagnostics guide manual selection, subsequent model comparisons require fresh or nested chronological evaluation.
+
+Install `research/mts_gold/requirements-model1.txt` and run the notebook, or execute `python research/mts_gold/code/model1_baseline.py`. `python research/mts_gold/code/build_model1_notebook.py --execute` regenerates and executes the notebook using the current Python kernel. Re-running replaces derived results and the Excel workbook; save an edited manual-selection workbook separately first. The original baseline dataframes remain unchanged.
+
+The input tables described below were prepared for separate GLD965 and GLD9999 experiments using every available date in the current research snapshot. The source tables have **no fixed 2025/2026 split**, no fitted imputer/scaler, and no global feature selection; the experiment above fits preprocessing separately inside each fold. The existing snapshot ends on 7 November 2026; preparation does not fetch newer observations.
 
 | File | Context rows | Rows with next-hour labels | Numeric X candidates |
 |---|---:|---:|---:|

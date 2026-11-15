@@ -1,0 +1,68 @@
+{
+  "config": {
+    "alpha": 0.01,
+    "l1_ratio": 0.5,
+    "max_iter": 10000,
+    "tol": 1e-05,
+    "half_life": 30,
+    "embargo_min_bars": 30,
+    "null_flag_threshold": 0.2,
+    "vif_warning_threshold": 5,
+    "vif_severe_threshold": 10,
+    "varclus_maxeigval2": 1.0,
+    "near_zero_z_band": 0.05,
+    "permutation_repeats": 20,
+    "block_bars": 30,
+    "bootstrap_repeats": 1000,
+    "random_seed": 42,
+    "vif_eigen_tolerance": 1e-10
+  },
+  "inputs": [
+    {
+      "file": "baseline_60m_GLD965.csv.gz",
+      "sha256": "3aab0b34c8b1bb0689ee3dc03ec163c1b552b3991e1804ab02151e08e11836c4"
+    },
+    {
+      "file": "baseline_60m_GLD9999.csv.gz",
+      "sha256": "74333f14b477540df1bbd00a4d543663fe07f046b26322101d98300d6baad466"
+    }
+  ],
+  "baseline_manifest_sha256": "2a4826e6157d405a80da948e2b1525f8a48af9ad650daa62c8a4c9dbac68ab46",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "varclushi": "0.1.0",
+    "openpyxl": "3.1.5",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "feature_removal": "none",
+  "hyperparameter_search": false,
+  "evaluation": "expanding time-fold CV across 2025 and 2026; not an untouched final holdout",
+  "artifacts": {
+    "coefficients.csv": "3bf85a59dba2dbf51153fba91687ac3a8b3b53961d96353220c6795d5e128336",
+    "cv_summary.csv": "8b766060c7590ea5e250cb7af476e4e9b927695952ff526d1a2e00d280909256",
+    "extrapolation.csv": "216693c013fe6b7eca47e37efe4fea610074e4dba6c89a1920ab16a1b7d2f0ac",
+    "fold_metrics.csv": "6a7b4810b4fbb358f349840ecfda837a185ddacbf29ab1c30e71231a00f85014",
+    "fold_schedule.csv": "e7d54444742960bd508ae1fb4d3bbe361ae3019e40f9b138990afa6fc5fe7b69",
+    "hour_metrics.csv": "d507097012f8c986cfb8484b263005555faa4ba6cc42cd1ed4666dc97cd95d86",
+    "manual_review.csv": "501a923d4a15101f3ab566955070cc958c140cc07c0260df87a8477f499699e0",
+    "model_bundles.json": "1e18100a2a7af2929b782ab9596bac99d6fef637bce98b08cd98305e67eee563",
+    "null_variance.csv": "dc37a5ebdc0afa8cf4d8cee0d13ec615b17b631e33a58113c3907a5c204522bc",
+    "permutation.csv": "2895ea5d3abd8552be1bb4a7d9934fd0480481c0ca7732753322224cb31ecba5",
+    "permutation_summary.csv": "d2c2f0935c7433128ffd553935a38053effc788bd12119f61513d3d1d84d1f7b",
+    "predictions.csv.gz": "f559eab3a1b6ae1bae123da38f2ebf63789694a9080768c42979b8a8b066b7bf",
+    "regime_metrics.csv": "3052015a6898aa29b31716812faadf925e1a2610622e77063575a6eb1b3897d0",
+    "varclus_clusters.csv": "70492f9d9852f98420e4b5537790038e52f03a829200e5c3e206660d98cc189e",
+    "varclus_features.csv": "cf28abfe90be46a1566189a2922bfe1514f98f2dd7b77c2051ceabd8cf723b16",
+    "vif.csv": "b71e53a92f03bbaf71722614937df640bf41cb10df1057471877f93851f525da",
+    "worst_prediction_contributions.csv": "6ab0bcbccfdfe4654e3bc7ca9dedf82d1c4d5205223c7dbf6b291736f93d515d"
+  },
+  "deliverables": {
+    "Model1_Baseline_Review.xlsx": "28b5c8284cb84c477ffecddb062d3da0c711f980e455f07020295092421ff327",
+    "Model1_Baseline_Summary.md": "92dccdf5a33be878a34e741fd8c917e0f8606410240c6a09e5d03c1bd71ff771",
+    "Model1_Baseline_Summary.docx": "654e70ed2ef1737cc21e6917d346d220f711f9eae7ae18106b47f95e1da95bfc"
+  }
+}

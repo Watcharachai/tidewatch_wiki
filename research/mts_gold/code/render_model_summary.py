@@ -7,6 +7,7 @@ import re
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
 from docx.shared import Inches, Pt
 
 
@@ -31,7 +32,7 @@ def add_inline(paragraph, value: str) -> None:
             paragraph.add_run(part)
 
 
-def render() -> Path:
+def render(source: Path = SOURCE, target: Path = TARGET) -> Path:
     doc = Document()
     section = doc.sections[0]
     section.top_margin = section.bottom_margin = Inches(.65)
@@ -40,9 +41,9 @@ def render() -> Path:
     style.font.name = "Aptos"
     style.font.size = Pt(9)
     style.paragraph_format.space_after = Pt(5)
-    doc.core_properties.title = "MTS Gold Forecasting: Dataset and Model Readiness"
+    doc.core_properties.title = source.read_text().splitlines()[0].removeprefix("# ")
     doc.core_properties.subject = "MTS gold training data, return distributions and first-model design"
-    lines = SOURCE.read_text().splitlines()
+    lines = source.read_text().splitlines()
     index = 0
     while index < len(lines):
         line = lines[index].strip()
@@ -50,7 +51,7 @@ def render() -> Path:
             index += 1
             continue
         if match := IMAGE.fullmatch(line):
-            image = (SOURCE.parent / match.group(2)).resolve()
+            image = (source.parent / match.group(2)).resolve()
             paragraph = doc.add_paragraph()
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
             paragraph.add_run().add_picture(str(image), width=Inches(6.8))
@@ -67,10 +68,17 @@ def render() -> Path:
                 index += 1
             table = doc.add_table(rows=0, cols=len(rows[0]))
             table.style = "Light Shading Accent 1"
-            for values in rows:
-                cells = table.add_row().cells
+            for row_number, values in enumerate(rows):
+                row = table.add_row()
+                properties = row._tr.get_or_add_trPr()
+                properties.append(OxmlElement("w:cantSplit"))
+                if row_number == 0:
+                    properties.append(OxmlElement("w:tblHeader"))
+                cells = row.cells
                 for cell, value in zip(cells, values):
                     paragraph = cell.paragraphs[0]
+                    if row_number == 0:
+                        paragraph.paragraph_format.keep_with_next = True
                     add_inline(paragraph, value)
                     for run in paragraph.runs:
                         run.font.size = Pt(7.5)
@@ -87,8 +95,8 @@ def render() -> Path:
             paragraph = doc.add_paragraph()
             add_inline(paragraph, line.removesuffix("  "))
         index += 1
-    doc.save(TARGET)
-    return TARGET
+    doc.save(target)
+    return target
 
 
 if __name__ == "__main__":
