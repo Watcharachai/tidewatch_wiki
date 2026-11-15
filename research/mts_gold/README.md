@@ -23,6 +23,8 @@ X_test, y_test = X.loc[split.eq("test_2026")], y.loc[split.eq("test_2026")]
 
 The full table also retains all candidate features and outcome metadata. Fit missing-value handling and scaling only on `X_train`.
 
+The [price and return modeling analysis](analysis/reports/price_return_modeling.md) compares 30m/60m GLD965 and GLD9999 trends, adjacent-bar returns, variance and drawdowns, with native daily context. Recreate its CSV statistics and chart offline with `python research/mts_gold/code/price_return_analysis.py`. It recommends testing next-bar log return as the dependent variable while retaining the current simple-return label for comparison.
+
 Run from the repository root, with Python 3.10+:
 
 ```bash
