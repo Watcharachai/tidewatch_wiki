@@ -4,6 +4,25 @@ This is a standalone Python research pipeline based on the Tidewatch wiki. It co
 
 The [quantitative feature collector](analysis/docs/feature_sources.md) adds 1/5/30 lags for both MTS gold series and available gold, cross-asset, macro and index references. It lists the historical futures, SET, silver and Singapore exports still needed from an approved source.
 
+The [30m/60m training tables](analysis/reports/training_dataset_summary.md) join the uploaded XAU/USDT bars to completed MTS observations, add next-contiguous-bar return labels, and report per-feature summary statistics and null rates. Regenerate them offline with `python research/mts_gold/code/training.py`. The outputs and a manifest containing each X column list are in `training_artifacts/`.
+
+To obtain separate `X` and `y` for one MTS target, run from the repository root:
+
+```python
+import sys
+from pathlib import Path
+import pandas as pd
+sys.path.insert(0, "research/mts_gold/code")
+from training import load_xy
+path = Path("research/mts_gold/training_artifacts/training_60m_GLD965.csv.gz")
+X, y = load_xy(path)  # baseline numeric columns; y is next-bar fractional return
+split = pd.read_csv(path, usecols=["split"])["split"]
+X_train, y_train = X.loc[split.eq("train_2025")], y.loc[split.eq("train_2025")]
+X_test, y_test = X.loc[split.eq("test_2026")], y.loc[split.eq("test_2026")]
+```
+
+The full table also retains all candidate features and outcome metadata. Fit missing-value handling and scaling only on `X_train`.
+
 Run from the repository root, with Python 3.10+:
 
 ```bash
