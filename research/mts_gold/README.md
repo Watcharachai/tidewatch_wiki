@@ -25,6 +25,8 @@ The full table also retains all candidate features and outcome metadata. Fit mis
 
 The [price and return modeling analysis](analysis/reports/price_return_modeling.md) compares 30m/60m GLD965 and GLD9999 trends, adjacent-bar returns, variance and drawdowns, with native daily context. Recreate its CSV statistics and chart offline with `python research/mts_gold/code/price_return_analysis.py`. It recommends testing next-bar log return as the dependent variable while retaining the current simple-return label for comparison.
 
+For a single pre-model review, read the [model readiness summary](analysis/docs/MTS_Model_Readiness_Summary.md) or its [DOCX](analysis/docs/MTS_Model_Readiness_Summary.docx). The document embeds the trend and histogram charts and links to detailed statistics. Regenerate the DOCX from the Markdown with `python research/mts_gold/code/render_model_summary.py` (`python-docx>=1.2,<2`).
+
 Run from the repository root, with Python 3.10+:
 
 ```bash
