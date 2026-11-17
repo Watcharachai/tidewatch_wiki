@@ -1,0 +1,69 @@
+fold,model,parameters,tuning_mse
+1,Lasso,"{""alpha"": 0.001}",1.0940158512015028
+1,Lasso,"{""alpha"": 0.01}",1.0414375401818994
+1,Lasso,"{""alpha"": 0.1}",1.038133374527061
+1,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",1.1315297439947942
+1,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",1.1051457246212357
+1,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",1.0476145954909046
+1,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",1.0419474103079578
+1,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",1.03826120414218
+1,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",1.038133374527061
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0443005272394454
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",1.044828979318188
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",1.040972285014915
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",1.0449625554055466
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0466053986112869
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",1.0476646970519208
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",1.0442217223825052
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",1.0520945087922968
+2,Lasso,"{""alpha"": 0.001}",1.0497644830328137
+2,Lasso,"{""alpha"": 0.01}",1.0415049207089788
+2,Lasso,"{""alpha"": 0.1}",1.04096584604935
+2,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",1.0504703544154053
+2,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",1.0501045522845478
+2,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",1.046633805742772
+2,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",1.0422481725580446
+2,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",1.04096584604935
+2,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",1.04096584604935
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0492553435038399
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",1.0561404782066872
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",1.03984853225754
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",1.0405854901656535
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0542039685758084
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",1.071116482700028
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",1.0412485718629176
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",1.0457318378802025
+3,Lasso,"{""alpha"": 0.001}",1.015222296369963
+3,Lasso,"{""alpha"": 0.01}",1.0023660771582688
+3,Lasso,"{""alpha"": 0.1}",1.0021029924767157
+3,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",1.0165748294139125
+3,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",1.0158055940050268
+3,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",1.0120557849053413
+3,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",1.0042446339159765
+3,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",1.0021029924767157
+3,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",1.0021029924767157
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0021678804496144
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",1.0049875409268334
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",1.001876717334656
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",1.002590258730851
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0043932598931333
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",1.010915812399536
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",1.0024228341992545
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",1.0051996517123105
+4,Lasso,"{""alpha"": 0.001}",1.0368825165611677
+4,Lasso,"{""alpha"": 0.01}",1.0320667380715332
+4,Lasso,"{""alpha"": 0.1}",1.0332660675108531
+4,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",1.0405174459437043
+4,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",1.0379620759164172
+4,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",1.0335586266422008
+4,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",1.0320056049163824
+4,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",1.0332660675108531
+4,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",1.0332660675108531
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0317866746992677
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",1.0316918179117807
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",1.0323979305423183
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",1.0322947923718728
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",1.0310437857259789
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",1.0470373687471595
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",1.032419174360416
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",1.034127145045858

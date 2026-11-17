@@ -1,5 +1,7 @@
 # All-date 60m two-model baseline dataset
 
+The subsequent [GLD965 15m waterfall experiment](model1_15m_waterfall/README.md) contains four-fold feature selection, tuned Lasso/Elastic Net/LightGBM comparisons, and notebook, Excel and DOCX exports.
+
 ## Untuned Model 1 and manual feature review
 
 The executed [training notebook](Model1_Training_Baseline.ipynb), [Excel review workbook](Model1_Baseline_Review.xlsx), and [results/development summary](Model1_Baseline_Summary.md) ([DOCX](Model1_Baseline_Summary.docx)) contain the baseline experiment. No candidate columns are deleted. The primary estimator uses the existing 23-feature core; a separate all-313-feature diagnostic estimator supplies wider permutation importance.

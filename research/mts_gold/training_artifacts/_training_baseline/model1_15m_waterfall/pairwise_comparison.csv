@@ -1,0 +1,4 @@
+first,second,mean_mse_advantage_first,mse_improvement_ci_low,mse_improvement_ci_high,r2_ci_low,r2_ci_high,acceptance_ci_positive,bootstrap_method
+Lasso,ElasticNet,3.2942170452272764e-05,-2.9804849681334174e-05,9.471800303490678e-05,-2.9805709462343064e-05,9.331115780423153e-05,False,"paired circular 30-observation blocks, stratified by fold"
+Lasso,LightGBMRegressor,0.0005385447608044765,-0.00032513287111917533,0.0014068594751861323,-0.0003215731131775678,0.0013716971065648343,False,"paired circular 30-observation blocks, stratified by fold"
+ElasticNet,LightGBMRegressor,0.0005056025903522037,-0.0003462508300837603,0.0013643665534606904,-0.00034369477216914196,0.0013405310339726637,False,"paired circular 30-observation blocks, stratified by fold"
