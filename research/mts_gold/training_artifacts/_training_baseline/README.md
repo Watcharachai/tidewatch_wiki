@@ -1,5 +1,7 @@
 # All-date 60m two-model baseline dataset
 
+The [GLD965 15m MA5-price experiment](model1_15m_priceMA/README.md) repeats the waterfall and tuned model comparison for next-bar average price, with persistence baselines and complete exports.
+
 The subsequent [GLD965 15m waterfall experiment](model1_15m_waterfall/README.md) contains four-fold feature selection, tuned Lasso/Elastic Net/LightGBM comparisons, and notebook, Excel and DOCX exports.
 
 ## Untuned Model 1 and manual feature review

@@ -1,0 +1,63 @@
+{
+  "config": {
+    "target": "Y(t+1) = mean(P[t-3],P[t-2],P[t-1],P[t],P[t+1]); five contiguous 15m closes",
+    "target_scaling": "fold-training mean/std; forecasts inverted to original THB quote units",
+    "Z_return_lag5": "one-bar log return five observed MTS bars ago / sigma at that historical bar; clipped [-5,5]",
+    "outer_folds": 4,
+    "embargo_context_bars": 30,
+    "ewma_half_life": 30,
+    "null_threshold": 0.2,
+    "vif_threshold": 10,
+    "varclus_top_per_cluster": 3,
+    "permutation_top_max": 45,
+    "seed": 42,
+    "selection": "inner training diagnostics; separate chronological selection and tuning blocks inside outer training",
+    "source_lags": "existing source lag fields shifted one additional MTS row: all X ends strictly before decision bar",
+    "near_zero_band": 0.05
+  },
+  "grids": {
+    "Lasso": {
+      "alpha": [
+        0.001,
+        0.01,
+        0.1
+      ]
+    },
+    "ElasticNet": {
+      "alpha": [
+        0.001,
+        0.01,
+        0.1
+      ],
+      "l1_ratio": [
+        0.25,
+        0.75
+      ]
+    },
+    "LightGBMRegressor": {
+      "n_estimators": [
+        100,
+        250
+      ],
+      "learning_rate": [
+        0.03,
+        0.07
+      ],
+      "min_child_samples": [
+        50,
+        150
+      ]
+    }
+  },
+  "source": "feature_artifacts/market_features_15m.csv.gz",
+  "source_sha256": "c86355c3622c6a97139a1e9774ccff90aba6f726a6a1cfe2d9a1150d980a08b1",
+  "context_rows": 42803,
+  "target_valid_rows": 40226,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "varclushi": "0.1.0"
+  }
+}

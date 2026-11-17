@@ -1,0 +1,4 @@
+first,second,mse_improvement_ci_low,mse_improvement_ci_high,acceptance_ci_positive,bootstrap_method
+Lasso,ElasticNet,-261841.62758640986,-90643.23042076998,False,"paired circular 30-observation blocks, stratified by fold"
+Lasso,LightGBMRegressor,17901280.720547553,23943973.3414208,True,"paired circular 30-observation blocks, stratified by fold"
+ElasticNet,LightGBMRegressor,18088576.03880035,24107679.97282632,True,"paired circular 30-observation blocks, stratified by fold"

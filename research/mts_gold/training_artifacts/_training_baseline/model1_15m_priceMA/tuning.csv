@@ -1,0 +1,69 @@
+fold,model,parameters,tuning_mse_scaled
+1,Lasso,"{""alpha"": 0.001}",0.38089978194327817
+1,Lasso,"{""alpha"": 0.01}",0.37974207167463403
+1,Lasso,"{""alpha"": 0.1}",0.7637206193177585
+1,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",0.4728513112293025
+1,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",0.4020801218240258
+1,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",0.31436320191824596
+1,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",0.35680607560578886
+1,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",0.884865582205537
+1,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",0.880363512847835
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",6.7614235214583065
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",6.227026518053186
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",6.760339753796873
+1,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",6.213042272859383
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",6.314528330812219
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",6.240255397520838
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",6.265955543306288
+1,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",6.157365594068485
+2,Lasso,"{""alpha"": 0.001}",3.660685650378487e-05
+2,Lasso,"{""alpha"": 0.01}",0.0004365514664777476
+2,Lasso,"{""alpha"": 0.1}",0.033064418903815125
+2,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",4.529224663359107e-05
+2,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",3.589315469621363e-05
+2,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",0.0010217722085384764
+2,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",0.00042083523581990033
+2,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",0.0641113920100944
+2,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",0.03148237057878416
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",0.24480029554179195
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",0.14878012597905985
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",0.3300365436127545
+2,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",0.26330005176967297
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",0.15034053846706427
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",0.14503943661181415
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",0.2672656072533661
+2,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",0.27776598287526777
+3,Lasso,"{""alpha"": 0.001}",0.08138233067545683
+3,Lasso,"{""alpha"": 0.01}",0.09607070291641029
+3,Lasso,"{""alpha"": 0.1}",1.375980765287638
+3,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",0.08292048455592556
+3,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",0.08096261243661995
+3,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",0.10551903880636582
+3,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",0.09876802997348279
+3,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",1.2162827574653856
+3,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",1.3934081604574713
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",27.99682014814955
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",25.647253663484346
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",27.96804870687943
+3,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",25.491845794924778
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",25.56370355852353
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",25.313508291665876
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",25.527025025261462
+3,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",25.3186947726641
+4,Lasso,"{""alpha"": 0.001}",6.236707439250855
+4,Lasso,"{""alpha"": 0.01}",4.688441652254983
+4,Lasso,"{""alpha"": 0.1}",0.5888084612165462
+4,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.25}",6.310759579887114
+4,ElasticNet,"{""alpha"": 0.001, ""l1_ratio"": 0.75}",6.261360271071383
+4,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.25}",5.489853930625988
+4,ElasticNet,"{""alpha"": 0.01, ""l1_ratio"": 0.75}",4.927077570442382
+4,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.25}",1.5945294469643716
+4,ElasticNet,"{""alpha"": 0.1, ""l1_ratio"": 0.75}",0.7619907158586003
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 100}",6.801382646728583
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",6.273247259584827
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 100}",6.806482463829098
+4,LightGBMRegressor,"{""learning_rate"": 0.03, ""min_child_samples"": 150, ""n_estimators"": 250}",6.39714059232709
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 100}",6.713604293125213
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",6.620276266007438
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 100}",6.937267592167923
+4,LightGBMRegressor,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",6.797796780888655
