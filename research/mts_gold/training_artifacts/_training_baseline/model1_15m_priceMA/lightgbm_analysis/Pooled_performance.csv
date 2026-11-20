@@ -1,0 +1,2 @@
+model,rows,RMSE,MAE,R2,MSE,skill_vs_structural,mse_improvement_ci_low,mse_improvement_ci_high,acceptance_ci_positive,bootstrap_method
+LightGBMRegressor,32185,5117.155959055946,3427.826990456223,0.5693894341757345,26185285.109301787,-76246.69643290235,-29415106.25633213,-23236790.333637755,False,"paired circular 30-observation blocks, stratified by fold"

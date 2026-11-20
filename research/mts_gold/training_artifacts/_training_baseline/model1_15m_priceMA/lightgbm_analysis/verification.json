@@ -1,0 +1,10 @@
+{
+  "original_artifact_hashes_unchanged": 39,
+  "workbook_sheets_verified": 25,
+  "LightGBM_feature_rows": 180,
+  "original_tuning_trials_reproduced": 32,
+  "all_original_winners_match": true,
+  "validation_rows": 32185,
+  "permutation_repeats": 20,
+  "all_hashes_valid": true
+}

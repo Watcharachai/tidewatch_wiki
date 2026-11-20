@@ -1,0 +1,785 @@
+fold,feature,status,is_gold_price_level
+1,mts965_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+1,mts965_15m_return_lag1,retained_final,False
+1,mts965_15m_elapsed_min_lag1,3 zero variance,False
+1,mts965_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+1,mts965_15m_return_lag5,retained_final,False
+1,mts965_15m_elapsed_min_lag5,5 iterative VIF >10,False
+1,mts965_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+1,mts965_15m_return_lag30,5 iterative VIF >10,False
+1,mts965_15m_elapsed_min_lag30,5 iterative VIF >10,False
+1,mts9999_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+1,mts9999_15m_return_lag1,5 iterative VIF >10,False
+1,mts9999_15m_elapsed_min_lag1,retained_final,False
+1,mts9999_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+1,mts9999_15m_return_lag5,5 iterative VIF >10,False
+1,mts9999_15m_elapsed_min_lag5,retained_final,False
+1,mts9999_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+1,mts9999_15m_return_lag30,retained_final,False
+1,mts9999_15m_elapsed_min_lag30,retained_final,False
+1,mts_xauusd_15m_close_lag1,retained_final,True
+1,mts_xauusd_15m_return_lag1,4 VARCLUS top 3 per cluster,False
+1,mts_xauusd_15m_elapsed_min_lag1,3 zero variance,False
+1,mts_xauusd_15m_close_lag5,5 iterative VIF >10,True
+1,mts_xauusd_15m_return_lag5,retained_final,False
+1,mts_xauusd_15m_elapsed_min_lag5,retained_final,False
+1,mts_xauusd_15m_close_lag30,5 iterative VIF >10,True
+1,mts_xauusd_15m_return_lag30,retained_final,False
+1,mts_xauusd_15m_elapsed_min_lag30,retained_final,False
+1,mts_xauusd_1d_close_lag1,4 VARCLUS top 3 per cluster,True
+1,mts_xauusd_1d_return_lag1,retained_final,False
+1,mts_xauusd_1d_elapsed_min_lag1,retained_final,False
+1,mts_xauusd_1d_close_lag5,retained_final,True
+1,mts_xauusd_1d_return_lag5,retained_final,False
+1,mts_xauusd_1d_elapsed_min_lag5,3 zero variance,False
+1,mts_xauusd_1d_close_lag30,2 null >=20%,True
+1,mts_xauusd_1d_return_lag30,2 null >=20%,False
+1,mts_xauusd_1d_elapsed_min_lag30,2 null >=20%,False
+1,xautusdt_15m_close_lag1,2 null >=20%,False
+1,xautusdt_15m_return_lag1,2 null >=20%,False
+1,xautusdt_15m_elapsed_min_lag1,2 null >=20%,False
+1,xautusdt_15m_close_lag5,2 null >=20%,False
+1,xautusdt_15m_return_lag5,2 null >=20%,False
+1,xautusdt_15m_elapsed_min_lag5,2 null >=20%,False
+1,xautusdt_15m_close_lag30,2 null >=20%,False
+1,xautusdt_15m_return_lag30,2 null >=20%,False
+1,xautusdt_15m_elapsed_min_lag30,2 null >=20%,False
+1,xautusdt_15m_volume_lag1,2 null >=20%,False
+1,xautusdt_15m_volume_lag5,2 null >=20%,False
+1,xautusdt_15m_volume_lag30,2 null >=20%,False
+1,xautusdt_1d_close_lag1,2 null >=20%,False
+1,xautusdt_1d_return_lag1,2 null >=20%,False
+1,xautusdt_1d_elapsed_min_lag1,2 null >=20%,False
+1,xautusdt_1d_close_lag5,2 null >=20%,False
+1,xautusdt_1d_return_lag5,2 null >=20%,False
+1,xautusdt_1d_elapsed_min_lag5,2 null >=20%,False
+1,xautusdt_1d_close_lag30,2 null >=20%,False
+1,xautusdt_1d_return_lag30,2 null >=20%,False
+1,xautusdt_1d_elapsed_min_lag30,2 null >=20%,False
+1,xautusdt_1d_volume_lag1,2 null >=20%,False
+1,xautusdt_1d_volume_lag5,2 null >=20%,False
+1,xautusdt_1d_volume_lag30,2 null >=20%,False
+1,btcusdt_15m_close_lag1,5 iterative VIF >10,False
+1,btcusdt_15m_return_lag1,retained_final,False
+1,btcusdt_15m_elapsed_min_lag1,3 zero variance,False
+1,btcusdt_15m_close_lag5,5 iterative VIF >10,False
+1,btcusdt_15m_return_lag5,retained_final,False
+1,btcusdt_15m_elapsed_min_lag5,3 zero variance,False
+1,btcusdt_15m_close_lag30,retained_final,False
+1,btcusdt_15m_return_lag30,retained_final,False
+1,btcusdt_15m_elapsed_min_lag30,3 zero variance,False
+1,btcusdt_15m_volume_lag1,retained_final,False
+1,btcusdt_15m_volume_lag5,retained_final,False
+1,btcusdt_15m_volume_lag30,4 VARCLUS top 3 per cluster,False
+1,btcusdt_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+1,btcusdt_1d_return_lag1,retained_final,False
+1,btcusdt_1d_elapsed_min_lag1,3 zero variance,False
+1,btcusdt_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,btcusdt_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+1,btcusdt_1d_elapsed_min_lag5,3 zero variance,False
+1,btcusdt_1d_close_lag30,2 null >=20%,False
+1,btcusdt_1d_return_lag30,2 null >=20%,False
+1,btcusdt_1d_elapsed_min_lag30,2 null >=20%,False
+1,btcusdt_1d_volume_lag1,retained_final,False
+1,btcusdt_1d_volume_lag5,4 VARCLUS top 3 per cluster,False
+1,btcusdt_1d_volume_lag30,2 null >=20%,False
+1,sp500_1d_close_lag1,5 iterative VIF >10,False
+1,sp500_1d_return_lag1,retained_final,False
+1,sp500_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,sp500_1d_close_lag5,5 iterative VIF >10,False
+1,sp500_1d_return_lag5,5 iterative VIF >10,False
+1,sp500_1d_elapsed_min_lag5,retained_final,False
+1,sp500_1d_close_lag30,2 null >=20%,False
+1,sp500_1d_return_lag30,2 null >=20%,False
+1,sp500_1d_elapsed_min_lag30,2 null >=20%,False
+1,nasdaq_1d_close_lag1,5 iterative VIF >10,False
+1,nasdaq_1d_return_lag1,5 iterative VIF >10,False
+1,nasdaq_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,nasdaq_1d_close_lag5,5 iterative VIF >10,False
+1,nasdaq_1d_return_lag5,5 iterative VIF >10,False
+1,nasdaq_1d_elapsed_min_lag5,5 iterative VIF >10,False
+1,nasdaq_1d_close_lag30,2 null >=20%,False
+1,nasdaq_1d_return_lag30,2 null >=20%,False
+1,nasdaq_1d_elapsed_min_lag30,2 null >=20%,False
+1,djia_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+1,djia_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+1,djia_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,djia_1d_close_lag5,retained_final,False
+1,djia_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+1,djia_1d_elapsed_min_lag5,5 iterative VIF >10,False
+1,djia_1d_close_lag30,2 null >=20%,False
+1,djia_1d_return_lag30,2 null >=20%,False
+1,djia_1d_elapsed_min_lag30,2 null >=20%,False
+1,us_yield_3m_1d_close_lag1,retained_final,False
+1,us_yield_3m_1d_return_lag1,retained_final,False
+1,us_yield_3m_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,us_yield_3m_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,us_yield_3m_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+1,us_yield_3m_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+1,us_yield_3m_1d_close_lag30,2 null >=20%,False
+1,us_yield_3m_1d_return_lag30,2 null >=20%,False
+1,us_yield_3m_1d_elapsed_min_lag30,2 null >=20%,False
+1,us_yield_2y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+1,us_yield_2y_1d_return_lag1,retained_final,False
+1,us_yield_2y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+1,us_yield_2y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,us_yield_2y_1d_return_lag5,5 iterative VIF >10,False
+1,us_yield_2y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+1,us_yield_2y_1d_close_lag30,2 null >=20%,False
+1,us_yield_2y_1d_return_lag30,2 null >=20%,False
+1,us_yield_2y_1d_elapsed_min_lag30,2 null >=20%,False
+1,us_yield_10y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+1,us_yield_10y_1d_return_lag1,5 iterative VIF >10,False
+1,us_yield_10y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+1,us_yield_10y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,us_yield_10y_1d_return_lag5,5 iterative VIF >10,False
+1,us_yield_10y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+1,us_yield_10y_1d_close_lag30,2 null >=20%,False
+1,us_yield_10y_1d_return_lag30,2 null >=20%,False
+1,us_yield_10y_1d_elapsed_min_lag30,2 null >=20%,False
+1,us_yield_30y_1d_close_lag1,5 iterative VIF >10,False
+1,us_yield_30y_1d_return_lag1,retained_final,False
+1,us_yield_30y_1d_elapsed_min_lag1,retained_final,False
+1,us_yield_30y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,us_yield_30y_1d_return_lag5,retained_final,False
+1,us_yield_30y_1d_elapsed_min_lag5,retained_final,False
+1,us_yield_30y_1d_close_lag30,2 null >=20%,False
+1,us_yield_30y_1d_return_lag30,2 null >=20%,False
+1,us_yield_30y_1d_elapsed_min_lag30,2 null >=20%,False
+1,vix_1d_close_lag1,5 iterative VIF >10,False
+1,vix_1d_return_lag1,retained_final,False
+1,vix_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,vix_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,vix_1d_return_lag5,retained_final,False
+1,vix_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+1,vix_1d_close_lag30,2 null >=20%,False
+1,vix_1d_return_lag30,2 null >=20%,False
+1,vix_1d_elapsed_min_lag30,2 null >=20%,False
+1,usdthb_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+1,usdthb_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+1,usdthb_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,usdthb_1d_close_lag5,retained_final,False
+1,usdthb_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+1,usdthb_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+1,usdthb_1d_close_lag30,2 null >=20%,False
+1,usdthb_1d_return_lag30,2 null >=20%,False
+1,usdthb_1d_elapsed_min_lag30,2 null >=20%,False
+1,wti_oil_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+1,wti_oil_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+1,wti_oil_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+1,wti_oil_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+1,wti_oil_1d_return_lag5,6 Lasso permutation top up to 45,False
+1,wti_oil_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+1,wti_oil_1d_close_lag30,2 null >=20%,False
+1,wti_oil_1d_return_lag30,2 null >=20%,False
+1,wti_oil_1d_elapsed_min_lag30,2 null >=20%,False
+1,own_return_min7_lag1,retained_final,False
+1,own_return_max7_lag1,retained_final,False
+1,own_return_mean7_lag1,4 VARCLUS top 3 per cluster,False
+1,own_return_variance7_lag1,retained_final,False
+1,own_return_skew7_lag1,retained_final,False
+1,own_return_kurtosis7_lag1,4 VARCLUS top 3 per cluster,False
+1,own_return_min15_lag1,5 iterative VIF >10,False
+1,own_return_max15_lag1,retained_final,False
+1,own_return_mean15_lag1,4 VARCLUS top 3 per cluster,False
+1,own_return_variance15_lag1,retained_final,False
+1,own_return_skew15_lag1,retained_final,False
+1,own_return_kurtosis15_lag1,retained_final,False
+1,own_return_min30_lag1,2 null >=20%,False
+1,own_return_max30_lag1,2 null >=20%,False
+1,own_return_mean30_lag1,2 null >=20%,False
+1,own_return_variance30_lag1,2 null >=20%,False
+1,own_return_skew30_lag1,2 null >=20%,False
+1,own_return_kurtosis30_lag1,2 null >=20%,False
+1,own_return_lag1,5 iterative VIF >10,False
+1,own_return_lag5,5 iterative VIF >10,False
+1,own_return_lag30,4 VARCLUS top 3 per cluster,False
+1,Z_return_lag5,retained_final,False
+2,mts965_15m_close_lag1,retained_final,True
+2,mts965_15m_return_lag1,5 iterative VIF >10,False
+2,mts965_15m_elapsed_min_lag1,3 zero variance,False
+2,mts965_15m_close_lag5,5 iterative VIF >10,True
+2,mts965_15m_return_lag5,5 iterative VIF >10,False
+2,mts965_15m_elapsed_min_lag5,retained_final,False
+2,mts965_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+2,mts965_15m_return_lag30,5 iterative VIF >10,False
+2,mts965_15m_elapsed_min_lag30,5 iterative VIF >10,False
+2,mts9999_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+2,mts9999_15m_return_lag1,5 iterative VIF >10,False
+2,mts9999_15m_elapsed_min_lag1,retained_final,False
+2,mts9999_15m_close_lag5,5 iterative VIF >10,True
+2,mts9999_15m_return_lag5,retained_final,False
+2,mts9999_15m_elapsed_min_lag5,retained_final,False
+2,mts9999_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+2,mts9999_15m_return_lag30,retained_final,False
+2,mts9999_15m_elapsed_min_lag30,retained_final,False
+2,mts_xauusd_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+2,mts_xauusd_15m_return_lag1,4 VARCLUS top 3 per cluster,False
+2,mts_xauusd_15m_elapsed_min_lag1,3 zero variance,False
+2,mts_xauusd_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+2,mts_xauusd_15m_return_lag5,retained_final,False
+2,mts_xauusd_15m_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,mts_xauusd_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+2,mts_xauusd_15m_return_lag30,retained_final,False
+2,mts_xauusd_15m_elapsed_min_lag30,retained_final,False
+2,mts_xauusd_1d_close_lag1,4 VARCLUS top 3 per cluster,True
+2,mts_xauusd_1d_return_lag1,retained_final,False
+2,mts_xauusd_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,mts_xauusd_1d_close_lag5,4 VARCLUS top 3 per cluster,True
+2,mts_xauusd_1d_return_lag5,retained_final,False
+2,mts_xauusd_1d_elapsed_min_lag5,retained_final,False
+2,mts_xauusd_1d_close_lag30,2 null >=20%,True
+2,mts_xauusd_1d_return_lag30,2 null >=20%,False
+2,mts_xauusd_1d_elapsed_min_lag30,2 null >=20%,False
+2,xautusdt_15m_close_lag1,2 null >=20%,False
+2,xautusdt_15m_return_lag1,2 null >=20%,False
+2,xautusdt_15m_elapsed_min_lag1,2 null >=20%,False
+2,xautusdt_15m_close_lag5,2 null >=20%,False
+2,xautusdt_15m_return_lag5,2 null >=20%,False
+2,xautusdt_15m_elapsed_min_lag5,2 null >=20%,False
+2,xautusdt_15m_close_lag30,2 null >=20%,False
+2,xautusdt_15m_return_lag30,2 null >=20%,False
+2,xautusdt_15m_elapsed_min_lag30,2 null >=20%,False
+2,xautusdt_15m_volume_lag1,2 null >=20%,False
+2,xautusdt_15m_volume_lag5,2 null >=20%,False
+2,xautusdt_15m_volume_lag30,2 null >=20%,False
+2,xautusdt_1d_close_lag1,2 null >=20%,False
+2,xautusdt_1d_return_lag1,2 null >=20%,False
+2,xautusdt_1d_elapsed_min_lag1,2 null >=20%,False
+2,xautusdt_1d_close_lag5,2 null >=20%,False
+2,xautusdt_1d_return_lag5,2 null >=20%,False
+2,xautusdt_1d_elapsed_min_lag5,2 null >=20%,False
+2,xautusdt_1d_close_lag30,2 null >=20%,False
+2,xautusdt_1d_return_lag30,2 null >=20%,False
+2,xautusdt_1d_elapsed_min_lag30,2 null >=20%,False
+2,xautusdt_1d_volume_lag1,2 null >=20%,False
+2,xautusdt_1d_volume_lag5,2 null >=20%,False
+2,xautusdt_1d_volume_lag30,2 null >=20%,False
+2,btcusdt_15m_close_lag1,5 iterative VIF >10,False
+2,btcusdt_15m_return_lag1,retained_final,False
+2,btcusdt_15m_elapsed_min_lag1,3 zero variance,False
+2,btcusdt_15m_close_lag5,5 iterative VIF >10,False
+2,btcusdt_15m_return_lag5,retained_final,False
+2,btcusdt_15m_elapsed_min_lag5,3 zero variance,False
+2,btcusdt_15m_close_lag30,5 iterative VIF >10,False
+2,btcusdt_15m_return_lag30,retained_final,False
+2,btcusdt_15m_elapsed_min_lag30,3 zero variance,False
+2,btcusdt_15m_volume_lag1,retained_final,False
+2,btcusdt_15m_volume_lag5,retained_final,False
+2,btcusdt_15m_volume_lag30,retained_final,False
+2,btcusdt_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+2,btcusdt_1d_return_lag1,retained_final,False
+2,btcusdt_1d_elapsed_min_lag1,3 zero variance,False
+2,btcusdt_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,btcusdt_1d_return_lag5,retained_final,False
+2,btcusdt_1d_elapsed_min_lag5,3 zero variance,False
+2,btcusdt_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+2,btcusdt_1d_return_lag30,retained_final,False
+2,btcusdt_1d_elapsed_min_lag30,3 zero variance,False
+2,btcusdt_1d_volume_lag1,4 VARCLUS top 3 per cluster,False
+2,btcusdt_1d_volume_lag5,4 VARCLUS top 3 per cluster,False
+2,btcusdt_1d_volume_lag30,4 VARCLUS top 3 per cluster,False
+2,sp500_1d_close_lag1,5 iterative VIF >10,False
+2,sp500_1d_return_lag1,5 iterative VIF >10,False
+2,sp500_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,sp500_1d_close_lag5,5 iterative VIF >10,False
+2,sp500_1d_return_lag5,5 iterative VIF >10,False
+2,sp500_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,sp500_1d_close_lag30,2 null >=20%,False
+2,sp500_1d_return_lag30,2 null >=20%,False
+2,sp500_1d_elapsed_min_lag30,2 null >=20%,False
+2,nasdaq_1d_close_lag1,5 iterative VIF >10,False
+2,nasdaq_1d_return_lag1,retained_final,False
+2,nasdaq_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,nasdaq_1d_close_lag5,5 iterative VIF >10,False
+2,nasdaq_1d_return_lag5,retained_final,False
+2,nasdaq_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,nasdaq_1d_close_lag30,2 null >=20%,False
+2,nasdaq_1d_return_lag30,2 null >=20%,False
+2,nasdaq_1d_elapsed_min_lag30,2 null >=20%,False
+2,djia_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+2,djia_1d_return_lag1,retained_final,False
+2,djia_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,djia_1d_close_lag5,retained_final,False
+2,djia_1d_return_lag5,5 iterative VIF >10,False
+2,djia_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,djia_1d_close_lag30,2 null >=20%,False
+2,djia_1d_return_lag30,2 null >=20%,False
+2,djia_1d_elapsed_min_lag30,2 null >=20%,False
+2,us_yield_3m_1d_close_lag1,retained_final,False
+2,us_yield_3m_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+2,us_yield_3m_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,us_yield_3m_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,us_yield_3m_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+2,us_yield_3m_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,us_yield_3m_1d_close_lag30,2 null >=20%,False
+2,us_yield_3m_1d_return_lag30,2 null >=20%,False
+2,us_yield_3m_1d_elapsed_min_lag30,2 null >=20%,False
+2,us_yield_2y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+2,us_yield_2y_1d_return_lag1,retained_final,False
+2,us_yield_2y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+2,us_yield_2y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,us_yield_2y_1d_return_lag5,retained_final,False
+2,us_yield_2y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+2,us_yield_2y_1d_close_lag30,2 null >=20%,False
+2,us_yield_2y_1d_return_lag30,2 null >=20%,False
+2,us_yield_2y_1d_elapsed_min_lag30,2 null >=20%,False
+2,us_yield_10y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+2,us_yield_10y_1d_return_lag1,5 iterative VIF >10,False
+2,us_yield_10y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+2,us_yield_10y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,us_yield_10y_1d_return_lag5,5 iterative VIF >10,False
+2,us_yield_10y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+2,us_yield_10y_1d_close_lag30,2 null >=20%,False
+2,us_yield_10y_1d_return_lag30,2 null >=20%,False
+2,us_yield_10y_1d_elapsed_min_lag30,2 null >=20%,False
+2,us_yield_30y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+2,us_yield_30y_1d_return_lag1,retained_final,False
+2,us_yield_30y_1d_elapsed_min_lag1,retained_final,False
+2,us_yield_30y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,us_yield_30y_1d_return_lag5,retained_final,False
+2,us_yield_30y_1d_elapsed_min_lag5,retained_final,False
+2,us_yield_30y_1d_close_lag30,2 null >=20%,False
+2,us_yield_30y_1d_return_lag30,2 null >=20%,False
+2,us_yield_30y_1d_elapsed_min_lag30,2 null >=20%,False
+2,vix_1d_close_lag1,6 Lasso permutation top up to 45,False
+2,vix_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+2,vix_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,vix_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,vix_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+2,vix_1d_elapsed_min_lag5,6 Lasso permutation top up to 45,False
+2,vix_1d_close_lag30,2 null >=20%,False
+2,vix_1d_return_lag30,2 null >=20%,False
+2,vix_1d_elapsed_min_lag30,2 null >=20%,False
+2,usdthb_1d_close_lag1,5 iterative VIF >10,False
+2,usdthb_1d_return_lag1,retained_final,False
+2,usdthb_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,usdthb_1d_close_lag5,retained_final,False
+2,usdthb_1d_return_lag5,retained_final,False
+2,usdthb_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,usdthb_1d_close_lag30,2 null >=20%,False
+2,usdthb_1d_return_lag30,2 null >=20%,False
+2,usdthb_1d_elapsed_min_lag30,2 null >=20%,False
+2,wti_oil_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+2,wti_oil_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+2,wti_oil_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+2,wti_oil_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+2,wti_oil_1d_return_lag5,6 Lasso permutation top up to 45,False
+2,wti_oil_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+2,wti_oil_1d_close_lag30,2 null >=20%,False
+2,wti_oil_1d_return_lag30,2 null >=20%,False
+2,wti_oil_1d_elapsed_min_lag30,2 null >=20%,False
+2,own_return_min7_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_max7_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_mean7_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_variance7_lag1,retained_final,False
+2,own_return_skew7_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_kurtosis7_lag1,retained_final,False
+2,own_return_min15_lag1,retained_final,False
+2,own_return_max15_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_mean15_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_variance15_lag1,retained_final,False
+2,own_return_skew15_lag1,4 VARCLUS top 3 per cluster,False
+2,own_return_kurtosis15_lag1,retained_final,False
+2,own_return_min30_lag1,2 null >=20%,False
+2,own_return_max30_lag1,2 null >=20%,False
+2,own_return_mean30_lag1,2 null >=20%,False
+2,own_return_variance30_lag1,2 null >=20%,False
+2,own_return_skew30_lag1,2 null >=20%,False
+2,own_return_kurtosis30_lag1,2 null >=20%,False
+2,own_return_lag1,retained_final,False
+2,own_return_lag5,retained_final,False
+2,own_return_lag30,retained_final,False
+2,Z_return_lag5,retained_final,False
+3,mts965_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+3,mts965_15m_return_lag1,5 iterative VIF >10,False
+3,mts965_15m_elapsed_min_lag1,3 zero variance,False
+3,mts965_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+3,mts965_15m_return_lag5,retained_final,False
+3,mts965_15m_elapsed_min_lag5,retained_final,False
+3,mts965_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+3,mts965_15m_return_lag30,5 iterative VIF >10,False
+3,mts965_15m_elapsed_min_lag30,5 iterative VIF >10,False
+3,mts9999_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+3,mts9999_15m_return_lag1,5 iterative VIF >10,False
+3,mts9999_15m_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,mts9999_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+3,mts9999_15m_return_lag5,4 VARCLUS top 3 per cluster,False
+3,mts9999_15m_elapsed_min_lag5,retained_final,False
+3,mts9999_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+3,mts9999_15m_return_lag30,retained_final,False
+3,mts9999_15m_elapsed_min_lag30,retained_final,False
+3,mts_xauusd_15m_close_lag1,retained_final,True
+3,mts_xauusd_15m_return_lag1,4 VARCLUS top 3 per cluster,False
+3,mts_xauusd_15m_elapsed_min_lag1,3 zero variance,False
+3,mts_xauusd_15m_close_lag5,5 iterative VIF >10,True
+3,mts_xauusd_15m_return_lag5,retained_final,False
+3,mts_xauusd_15m_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,mts_xauusd_15m_close_lag30,5 iterative VIF >10,True
+3,mts_xauusd_15m_return_lag30,retained_final,False
+3,mts_xauusd_15m_elapsed_min_lag30,retained_final,False
+3,mts_xauusd_1d_close_lag1,4 VARCLUS top 3 per cluster,True
+3,mts_xauusd_1d_return_lag1,retained_final,False
+3,mts_xauusd_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,mts_xauusd_1d_close_lag5,4 VARCLUS top 3 per cluster,True
+3,mts_xauusd_1d_return_lag5,retained_final,False
+3,mts_xauusd_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,mts_xauusd_1d_close_lag30,4 VARCLUS top 3 per cluster,True
+3,mts_xauusd_1d_return_lag30,4 VARCLUS top 3 per cluster,False
+3,mts_xauusd_1d_elapsed_min_lag30,retained_final,False
+3,xautusdt_15m_close_lag1,2 null >=20%,False
+3,xautusdt_15m_return_lag1,2 null >=20%,False
+3,xautusdt_15m_elapsed_min_lag1,2 null >=20%,False
+3,xautusdt_15m_close_lag5,2 null >=20%,False
+3,xautusdt_15m_return_lag5,2 null >=20%,False
+3,xautusdt_15m_elapsed_min_lag5,2 null >=20%,False
+3,xautusdt_15m_close_lag30,2 null >=20%,False
+3,xautusdt_15m_return_lag30,2 null >=20%,False
+3,xautusdt_15m_elapsed_min_lag30,2 null >=20%,False
+3,xautusdt_15m_volume_lag1,2 null >=20%,False
+3,xautusdt_15m_volume_lag5,2 null >=20%,False
+3,xautusdt_15m_volume_lag30,2 null >=20%,False
+3,xautusdt_1d_close_lag1,2 null >=20%,False
+3,xautusdt_1d_return_lag1,2 null >=20%,False
+3,xautusdt_1d_elapsed_min_lag1,2 null >=20%,False
+3,xautusdt_1d_close_lag5,2 null >=20%,False
+3,xautusdt_1d_return_lag5,2 null >=20%,False
+3,xautusdt_1d_elapsed_min_lag5,2 null >=20%,False
+3,xautusdt_1d_close_lag30,2 null >=20%,False
+3,xautusdt_1d_return_lag30,2 null >=20%,False
+3,xautusdt_1d_elapsed_min_lag30,2 null >=20%,False
+3,xautusdt_1d_volume_lag1,2 null >=20%,False
+3,xautusdt_1d_volume_lag5,2 null >=20%,False
+3,xautusdt_1d_volume_lag30,2 null >=20%,False
+3,btcusdt_15m_close_lag1,5 iterative VIF >10,False
+3,btcusdt_15m_return_lag1,retained_final,False
+3,btcusdt_15m_elapsed_min_lag1,3 zero variance,False
+3,btcusdt_15m_close_lag5,5 iterative VIF >10,False
+3,btcusdt_15m_return_lag5,retained_final,False
+3,btcusdt_15m_elapsed_min_lag5,3 zero variance,False
+3,btcusdt_15m_close_lag30,5 iterative VIF >10,False
+3,btcusdt_15m_return_lag30,retained_final,False
+3,btcusdt_15m_elapsed_min_lag30,3 zero variance,False
+3,btcusdt_15m_volume_lag1,retained_final,False
+3,btcusdt_15m_volume_lag5,retained_final,False
+3,btcusdt_15m_volume_lag30,retained_final,False
+3,btcusdt_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_elapsed_min_lag1,3 zero variance,False
+3,btcusdt_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_elapsed_min_lag5,3 zero variance,False
+3,btcusdt_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_return_lag30,retained_final,False
+3,btcusdt_1d_elapsed_min_lag30,3 zero variance,False
+3,btcusdt_1d_volume_lag1,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_volume_lag5,4 VARCLUS top 3 per cluster,False
+3,btcusdt_1d_volume_lag30,4 VARCLUS top 3 per cluster,False
+3,sp500_1d_close_lag1,6 Lasso permutation top up to 45,False
+3,sp500_1d_return_lag1,5 iterative VIF >10,False
+3,sp500_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,sp500_1d_close_lag5,5 iterative VIF >10,False
+3,sp500_1d_return_lag5,5 iterative VIF >10,False
+3,sp500_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,sp500_1d_close_lag30,2 null >=20%,False
+3,sp500_1d_return_lag30,2 null >=20%,False
+3,sp500_1d_elapsed_min_lag30,2 null >=20%,False
+3,nasdaq_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,nasdaq_1d_return_lag1,retained_final,False
+3,nasdaq_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,nasdaq_1d_close_lag5,5 iterative VIF >10,False
+3,nasdaq_1d_return_lag5,retained_final,False
+3,nasdaq_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,nasdaq_1d_close_lag30,2 null >=20%,False
+3,nasdaq_1d_return_lag30,2 null >=20%,False
+3,nasdaq_1d_elapsed_min_lag30,2 null >=20%,False
+3,djia_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,djia_1d_return_lag1,6 Lasso permutation top up to 45,False
+3,djia_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,djia_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+3,djia_1d_return_lag5,retained_final,False
+3,djia_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,djia_1d_close_lag30,2 null >=20%,False
+3,djia_1d_return_lag30,2 null >=20%,False
+3,djia_1d_elapsed_min_lag30,2 null >=20%,False
+3,us_yield_3m_1d_close_lag1,retained_final,False
+3,us_yield_3m_1d_return_lag1,6 Lasso permutation top up to 45,False
+3,us_yield_3m_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,us_yield_3m_1d_close_lag5,retained_final,False
+3,us_yield_3m_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+3,us_yield_3m_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,us_yield_3m_1d_close_lag30,2 null >=20%,False
+3,us_yield_3m_1d_return_lag30,2 null >=20%,False
+3,us_yield_3m_1d_elapsed_min_lag30,2 null >=20%,False
+3,us_yield_2y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,us_yield_2y_1d_return_lag1,retained_final,False
+3,us_yield_2y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+3,us_yield_2y_1d_close_lag5,5 iterative VIF >10,False
+3,us_yield_2y_1d_return_lag5,retained_final,False
+3,us_yield_2y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+3,us_yield_2y_1d_close_lag30,2 null >=20%,False
+3,us_yield_2y_1d_return_lag30,2 null >=20%,False
+3,us_yield_2y_1d_elapsed_min_lag30,2 null >=20%,False
+3,us_yield_10y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,us_yield_10y_1d_return_lag1,retained_final,False
+3,us_yield_10y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+3,us_yield_10y_1d_close_lag5,retained_final,False
+3,us_yield_10y_1d_return_lag5,5 iterative VIF >10,False
+3,us_yield_10y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+3,us_yield_10y_1d_close_lag30,2 null >=20%,False
+3,us_yield_10y_1d_return_lag30,2 null >=20%,False
+3,us_yield_10y_1d_elapsed_min_lag30,2 null >=20%,False
+3,us_yield_30y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,us_yield_30y_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+3,us_yield_30y_1d_elapsed_min_lag1,retained_final,False
+3,us_yield_30y_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+3,us_yield_30y_1d_return_lag5,6 Lasso permutation top up to 45,False
+3,us_yield_30y_1d_elapsed_min_lag5,retained_final,False
+3,us_yield_30y_1d_close_lag30,2 null >=20%,False
+3,us_yield_30y_1d_return_lag30,2 null >=20%,False
+3,us_yield_30y_1d_elapsed_min_lag30,2 null >=20%,False
+3,vix_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,vix_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+3,vix_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,vix_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+3,vix_1d_return_lag5,retained_final,False
+3,vix_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,vix_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+3,vix_1d_return_lag30,4 VARCLUS top 3 per cluster,False
+3,vix_1d_elapsed_min_lag30,6 Lasso permutation top up to 45,False
+3,usdthb_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+3,usdthb_1d_return_lag1,retained_final,False
+3,usdthb_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,usdthb_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+3,usdthb_1d_return_lag5,retained_final,False
+3,usdthb_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,usdthb_1d_close_lag30,2 null >=20%,False
+3,usdthb_1d_return_lag30,2 null >=20%,False
+3,usdthb_1d_elapsed_min_lag30,2 null >=20%,False
+3,wti_oil_1d_close_lag1,6 Lasso permutation top up to 45,False
+3,wti_oil_1d_return_lag1,6 Lasso permutation top up to 45,False
+3,wti_oil_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+3,wti_oil_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+3,wti_oil_1d_return_lag5,6 Lasso permutation top up to 45,False
+3,wti_oil_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+3,wti_oil_1d_close_lag30,2 null >=20%,False
+3,wti_oil_1d_return_lag30,2 null >=20%,False
+3,wti_oil_1d_elapsed_min_lag30,2 null >=20%,False
+3,own_return_min7_lag1,4 VARCLUS top 3 per cluster,False
+3,own_return_max7_lag1,4 VARCLUS top 3 per cluster,False
+3,own_return_mean7_lag1,retained_final,False
+3,own_return_variance7_lag1,retained_final,False
+3,own_return_skew7_lag1,retained_final,False
+3,own_return_kurtosis7_lag1,retained_final,False
+3,own_return_min15_lag1,retained_final,False
+3,own_return_max15_lag1,4 VARCLUS top 3 per cluster,False
+3,own_return_mean15_lag1,retained_final,False
+3,own_return_variance15_lag1,retained_final,False
+3,own_return_skew15_lag1,retained_final,False
+3,own_return_kurtosis15_lag1,retained_final,False
+3,own_return_min30_lag1,2 null >=20%,False
+3,own_return_max30_lag1,2 null >=20%,False
+3,own_return_mean30_lag1,2 null >=20%,False
+3,own_return_variance30_lag1,2 null >=20%,False
+3,own_return_skew30_lag1,2 null >=20%,False
+3,own_return_kurtosis30_lag1,2 null >=20%,False
+3,own_return_lag1,retained_final,False
+3,own_return_lag5,retained_final,False
+3,own_return_lag30,4 VARCLUS top 3 per cluster,False
+3,Z_return_lag5,retained_final,False
+4,mts965_15m_close_lag1,5 iterative VIF >10,True
+4,mts965_15m_return_lag1,5 iterative VIF >10,False
+4,mts965_15m_elapsed_min_lag1,3 zero variance,False
+4,mts965_15m_close_lag5,5 iterative VIF >10,True
+4,mts965_15m_return_lag5,5 iterative VIF >10,False
+4,mts965_15m_elapsed_min_lag5,retained_final,False
+4,mts965_15m_close_lag30,5 iterative VIF >10,True
+4,mts965_15m_return_lag30,5 iterative VIF >10,False
+4,mts965_15m_elapsed_min_lag30,5 iterative VIF >10,False
+4,mts9999_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+4,mts9999_15m_return_lag1,5 iterative VIF >10,False
+4,mts9999_15m_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,mts9999_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+4,mts9999_15m_return_lag5,retained_final,False
+4,mts9999_15m_elapsed_min_lag5,retained_final,False
+4,mts9999_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+4,mts9999_15m_return_lag30,retained_final,False
+4,mts9999_15m_elapsed_min_lag30,retained_final,False
+4,mts_xauusd_15m_close_lag1,4 VARCLUS top 3 per cluster,True
+4,mts_xauusd_15m_return_lag1,4 VARCLUS top 3 per cluster,False
+4,mts_xauusd_15m_elapsed_min_lag1,3 zero variance,False
+4,mts_xauusd_15m_close_lag5,4 VARCLUS top 3 per cluster,True
+4,mts_xauusd_15m_return_lag5,retained_final,False
+4,mts_xauusd_15m_elapsed_min_lag5,retained_final,False
+4,mts_xauusd_15m_close_lag30,4 VARCLUS top 3 per cluster,True
+4,mts_xauusd_15m_return_lag30,retained_final,False
+4,mts_xauusd_15m_elapsed_min_lag30,retained_final,False
+4,mts_xauusd_1d_close_lag1,4 VARCLUS top 3 per cluster,True
+4,mts_xauusd_1d_return_lag1,retained_final,False
+4,mts_xauusd_1d_elapsed_min_lag1,6 Lasso permutation top up to 45,False
+4,mts_xauusd_1d_close_lag5,4 VARCLUS top 3 per cluster,True
+4,mts_xauusd_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+4,mts_xauusd_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,mts_xauusd_1d_close_lag30,4 VARCLUS top 3 per cluster,True
+4,mts_xauusd_1d_return_lag30,4 VARCLUS top 3 per cluster,False
+4,mts_xauusd_1d_elapsed_min_lag30,retained_final,False
+4,xautusdt_15m_close_lag1,2 null >=20%,False
+4,xautusdt_15m_return_lag1,2 null >=20%,False
+4,xautusdt_15m_elapsed_min_lag1,2 null >=20%,False
+4,xautusdt_15m_close_lag5,2 null >=20%,False
+4,xautusdt_15m_return_lag5,2 null >=20%,False
+4,xautusdt_15m_elapsed_min_lag5,2 null >=20%,False
+4,xautusdt_15m_close_lag30,2 null >=20%,False
+4,xautusdt_15m_return_lag30,2 null >=20%,False
+4,xautusdt_15m_elapsed_min_lag30,2 null >=20%,False
+4,xautusdt_15m_volume_lag1,2 null >=20%,False
+4,xautusdt_15m_volume_lag5,2 null >=20%,False
+4,xautusdt_15m_volume_lag30,2 null >=20%,False
+4,xautusdt_1d_close_lag1,2 null >=20%,False
+4,xautusdt_1d_return_lag1,2 null >=20%,False
+4,xautusdt_1d_elapsed_min_lag1,2 null >=20%,False
+4,xautusdt_1d_close_lag5,2 null >=20%,False
+4,xautusdt_1d_return_lag5,2 null >=20%,False
+4,xautusdt_1d_elapsed_min_lag5,2 null >=20%,False
+4,xautusdt_1d_close_lag30,2 null >=20%,False
+4,xautusdt_1d_return_lag30,2 null >=20%,False
+4,xautusdt_1d_elapsed_min_lag30,2 null >=20%,False
+4,xautusdt_1d_volume_lag1,2 null >=20%,False
+4,xautusdt_1d_volume_lag5,2 null >=20%,False
+4,xautusdt_1d_volume_lag30,2 null >=20%,False
+4,btcusdt_15m_close_lag1,4 VARCLUS top 3 per cluster,False
+4,btcusdt_15m_return_lag1,retained_final,False
+4,btcusdt_15m_elapsed_min_lag1,3 zero variance,False
+4,btcusdt_15m_close_lag5,5 iterative VIF >10,False
+4,btcusdt_15m_return_lag5,retained_final,False
+4,btcusdt_15m_elapsed_min_lag5,3 zero variance,False
+4,btcusdt_15m_close_lag30,5 iterative VIF >10,False
+4,btcusdt_15m_return_lag30,6 Lasso permutation top up to 45,False
+4,btcusdt_15m_elapsed_min_lag30,3 zero variance,False
+4,btcusdt_15m_volume_lag1,retained_final,False
+4,btcusdt_15m_volume_lag5,retained_final,False
+4,btcusdt_15m_volume_lag30,retained_final,False
+4,btcusdt_1d_close_lag1,5 iterative VIF >10,False
+4,btcusdt_1d_return_lag1,retained_final,False
+4,btcusdt_1d_elapsed_min_lag1,3 zero variance,False
+4,btcusdt_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+4,btcusdt_1d_return_lag5,retained_final,False
+4,btcusdt_1d_elapsed_min_lag5,3 zero variance,False
+4,btcusdt_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+4,btcusdt_1d_return_lag30,6 Lasso permutation top up to 45,False
+4,btcusdt_1d_elapsed_min_lag30,3 zero variance,False
+4,btcusdt_1d_volume_lag1,6 Lasso permutation top up to 45,False
+4,btcusdt_1d_volume_lag5,retained_final,False
+4,btcusdt_1d_volume_lag30,4 VARCLUS top 3 per cluster,False
+4,sp500_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+4,sp500_1d_return_lag1,5 iterative VIF >10,False
+4,sp500_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,sp500_1d_close_lag5,5 iterative VIF >10,False
+4,sp500_1d_return_lag5,5 iterative VIF >10,False
+4,sp500_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,sp500_1d_close_lag30,5 iterative VIF >10,False
+4,sp500_1d_return_lag30,5 iterative VIF >10,False
+4,sp500_1d_elapsed_min_lag30,4 VARCLUS top 3 per cluster,False
+4,nasdaq_1d_close_lag1,5 iterative VIF >10,False
+4,nasdaq_1d_return_lag1,retained_final,False
+4,nasdaq_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,nasdaq_1d_close_lag5,5 iterative VIF >10,False
+4,nasdaq_1d_return_lag5,retained_final,False
+4,nasdaq_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,nasdaq_1d_close_lag30,5 iterative VIF >10,False
+4,nasdaq_1d_return_lag30,5 iterative VIF >10,False
+4,nasdaq_1d_elapsed_min_lag30,4 VARCLUS top 3 per cluster,False
+4,djia_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+4,djia_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+4,djia_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,djia_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+4,djia_1d_return_lag5,retained_final,False
+4,djia_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,djia_1d_close_lag30,6 Lasso permutation top up to 45,False
+4,djia_1d_return_lag30,5 iterative VIF >10,False
+4,djia_1d_elapsed_min_lag30,4 VARCLUS top 3 per cluster,False
+4,us_yield_3m_1d_close_lag1,5 iterative VIF >10,False
+4,us_yield_3m_1d_return_lag1,retained_final,False
+4,us_yield_3m_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,us_yield_3m_1d_close_lag5,5 iterative VIF >10,False
+4,us_yield_3m_1d_return_lag5,retained_final,False
+4,us_yield_3m_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,us_yield_3m_1d_close_lag30,retained_final,False
+4,us_yield_3m_1d_return_lag30,6 Lasso permutation top up to 45,False
+4,us_yield_3m_1d_elapsed_min_lag30,4 VARCLUS top 3 per cluster,False
+4,us_yield_2y_1d_close_lag1,6 Lasso permutation top up to 45,False
+4,us_yield_2y_1d_return_lag1,retained_final,False
+4,us_yield_2y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+4,us_yield_2y_1d_close_lag5,5 iterative VIF >10,False
+4,us_yield_2y_1d_return_lag5,retained_final,False
+4,us_yield_2y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+4,us_yield_2y_1d_close_lag30,6 Lasso permutation top up to 45,False
+4,us_yield_2y_1d_return_lag30,4 VARCLUS top 3 per cluster,False
+4,us_yield_2y_1d_elapsed_min_lag30,6 Lasso permutation top up to 45,False
+4,us_yield_10y_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+4,us_yield_10y_1d_return_lag1,5 iterative VIF >10,False
+4,us_yield_10y_1d_elapsed_min_lag1,5 iterative VIF >10,False
+4,us_yield_10y_1d_close_lag5,5 iterative VIF >10,False
+4,us_yield_10y_1d_return_lag5,5 iterative VIF >10,False
+4,us_yield_10y_1d_elapsed_min_lag5,5 iterative VIF >10,False
+4,us_yield_10y_1d_close_lag30,5 iterative VIF >10,False
+4,us_yield_10y_1d_return_lag30,4 VARCLUS top 3 per cluster,False
+4,us_yield_10y_1d_elapsed_min_lag30,5 iterative VIF >10,False
+4,us_yield_30y_1d_close_lag1,retained_final,False
+4,us_yield_30y_1d_return_lag1,retained_final,False
+4,us_yield_30y_1d_elapsed_min_lag1,6 Lasso permutation top up to 45,False
+4,us_yield_30y_1d_close_lag5,5 iterative VIF >10,False
+4,us_yield_30y_1d_return_lag5,retained_final,False
+4,us_yield_30y_1d_elapsed_min_lag5,6 Lasso permutation top up to 45,False
+4,us_yield_30y_1d_close_lag30,retained_final,False
+4,us_yield_30y_1d_return_lag30,5 iterative VIF >10,False
+4,us_yield_30y_1d_elapsed_min_lag30,4 VARCLUS top 3 per cluster,False
+4,vix_1d_close_lag1,5 iterative VIF >10,False
+4,vix_1d_return_lag1,6 Lasso permutation top up to 45,False
+4,vix_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,vix_1d_close_lag5,retained_final,False
+4,vix_1d_return_lag5,4 VARCLUS top 3 per cluster,False
+4,vix_1d_elapsed_min_lag5,retained_final,False
+4,vix_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+4,vix_1d_return_lag30,6 Lasso permutation top up to 45,False
+4,vix_1d_elapsed_min_lag30,retained_final,False
+4,usdthb_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+4,usdthb_1d_return_lag1,retained_final,False
+4,usdthb_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,usdthb_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+4,usdthb_1d_return_lag5,retained_final,False
+4,usdthb_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,usdthb_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+4,usdthb_1d_return_lag30,4 VARCLUS top 3 per cluster,False
+4,usdthb_1d_elapsed_min_lag30,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_close_lag1,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_return_lag1,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_elapsed_min_lag1,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_close_lag5,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_return_lag5,retained_final,False
+4,wti_oil_1d_elapsed_min_lag5,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_close_lag30,4 VARCLUS top 3 per cluster,False
+4,wti_oil_1d_return_lag30,retained_final,False
+4,wti_oil_1d_elapsed_min_lag30,5 iterative VIF >10,False
+4,own_return_min7_lag1,4 VARCLUS top 3 per cluster,False
+4,own_return_max7_lag1,4 VARCLUS top 3 per cluster,False
+4,own_return_mean7_lag1,4 VARCLUS top 3 per cluster,False
+4,own_return_variance7_lag1,6 Lasso permutation top up to 45,False
+4,own_return_skew7_lag1,4 VARCLUS top 3 per cluster,False
+4,own_return_kurtosis7_lag1,retained_final,False
+4,own_return_min15_lag1,5 iterative VIF >10,False
+4,own_return_max15_lag1,4 VARCLUS top 3 per cluster,False
+4,own_return_mean15_lag1,4 VARCLUS top 3 per cluster,False
+4,own_return_variance15_lag1,retained_final,False
+4,own_return_skew15_lag1,6 Lasso permutation top up to 45,False
+4,own_return_kurtosis15_lag1,retained_final,False
+4,own_return_min30_lag1,2 null >=20%,False
+4,own_return_max30_lag1,2 null >=20%,False
+4,own_return_mean30_lag1,2 null >=20%,False
+4,own_return_variance30_lag1,2 null >=20%,False
+4,own_return_skew30_lag1,2 null >=20%,False
+4,own_return_kurtosis30_lag1,2 null >=20%,False
+4,own_return_lag1,retained_final,False
+4,own_return_lag5,retained_final,False
+4,own_return_lag30,retained_final,False
+4,Z_return_lag5,retained_final,False

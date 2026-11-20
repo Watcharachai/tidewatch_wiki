@@ -1,0 +1,7 @@
+first_fold,second_fold,selected_intersection,selected_Jaccard,top10_gain_intersection,caution
+1,2,27,0.42857142857142855,3,"Different historical regimes and training sizes; RMSE differences are descriptive, not a paired same-sample test"
+1,3,26,0.40625,3,"Different historical regimes and training sizes; RMSE differences are descriptive, not a paired same-sample test"
+1,4,20,0.2857142857142857,0,"Different historical regimes and training sizes; RMSE differences are descriptive, not a paired same-sample test"
+2,3,33,0.5789473684210527,1,"Different historical regimes and training sizes; RMSE differences are descriptive, not a paired same-sample test"
+2,4,31,0.5254237288135594,1,"Different historical regimes and training sizes; RMSE differences are descriptive, not a paired same-sample test"
+3,4,27,0.42857142857142855,2,"Different historical regimes and training sizes; RMSE differences are descriptive, not a paired same-sample test"

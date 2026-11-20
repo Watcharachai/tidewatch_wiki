@@ -1,0 +1,5 @@
+fold,learning_rate,min_child_samples,n_estimators,parameters,rank,selected,tuning_mse_scaled,tuning_RMSE_THB,inner_target_scale,tuning_rows,pct_MSE_above_winner,improvement_vs_winner_ci_low,improvement_vs_winner_ci_high,improvement_vs_structural_ci_low,improvement_vs_structural_ci_high
+1,0.07,150,250,"{""learning_rate"": 0.07, ""min_child_samples"": 150, ""n_estimators"": 250}",1,True,6.157365594068485,3811.334419447441,1535.9588711283113,1575,0.0,0.0,0.0,-16668387.806513572,-12628555.730025798
+2,0.07,50,250,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",1,True,0.1450394366118141,1181.0285264998688,3101.1111721877955,3178,0.0,0.0,0.0,-2063734.560905856,-865337.8484532906
+3,0.07,50,250,"{""learning_rate"": 0.07, ""min_child_samples"": 50, ""n_estimators"": 250}",1,True,25.31350829166588,14905.764782116086,2962.634621677072,4784,0.0,0.0,0.0,-242986613.9822955,-202202216.05809444
+4,0.03,50,250,"{""learning_rate"": 0.03, ""min_child_samples"": 50, ""n_estimators"": 250}",1,True,6.273247259584827,13980.896976122642,5581.9871536339415,6409,0.0,0.0,0.0,-215685728.1265209,-175290769.7068204
