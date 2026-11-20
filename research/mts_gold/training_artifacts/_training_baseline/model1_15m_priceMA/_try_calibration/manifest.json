@@ -1,0 +1,50 @@
+{
+  "source_predictions_sha256": "80e18251cdd7119a1d9adfa9f94978f9f1b55ebdd2a9fe60eaf4c35ffaf87cfe",
+  "source": "predictions.csv.gz",
+  "protocol": "Per original fold: first 50% of available prediction rows fits calibration, then 30 prediction-row embargo, later remainder evaluates; fit labels must mature before embargo. Existing LightGBM models unchanged.",
+  "highlight_fold": 3,
+  "highlight_reason": "Highest original validation R2; chosen for descriptive emphasis, not independent model selection",
+  "equations": [
+    "isotonic increasing, clipped outside fit range",
+    "b0+b1*X",
+    "b0+b1*X+b2*X^2",
+    "b0+b1*X+b2*X^2+b3*X^3"
+  ],
+  "inference": "OLS and HAC30 fit-block statistics; paired circular30-row bootstrap1000 for evaluation MSE improvement. No multiplicity adjustment. Development evidence after prior inspection, not a fresh final test.",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "statsmodels": "0.14.6",
+    "scipy": "1.17.0"
+  },
+  "files": {
+    "LightGBM_Calibration_Analysis.xlsx": "125bfda19f791ba4f85e6b0ff1d3a36107da3b7c4dc056cc7f74ab3d7cfbce76",
+    "fold1_cubic_OLS_summary.txt": "4225a10a0a5ca53882c894a478d78d59d08c4670bf9987bfd803f3660c41516b",
+    "Performance_by_fold.csv": "ec99ee3bbd4497f1fbfc6901ecc0e9c0c26da1c79c98d458d393c69b567112f1",
+    "Isotonic_knots.csv": "d63a74980aad3702ce010d5e6e92e92e4d6d88d74d463575478e394665feda02",
+    "fold4_linear_OLS_summary.txt": "ae1a26bb1adff48aa1a4d2a06a88bf4fe0ba0c5169e9b1750d2edd52f03c676d",
+    "Chronological_split.csv": "42243d85c28ed529278f0417816b68fa0e750b6e451bd9d700819dbb50e085e9",
+    "fold3_cubic_OLS_summary.txt": "c76797e307f16528710e6486c6772a86340f15682dc860aafe14928a67b34106",
+    "fold1_linear_OLS_summary.txt": "be8e74986e076b0db689c95f6eabf49c681e902a325be2a6b037cdf348843480",
+    "Pooled_later_evaluation.csv": "da2a213ddccabfa8ed8228d5bca4abed8f8eae995d4581f8c2fa06c79ccf1fed",
+    "fold3_quadratic_OLS_summary.txt": "03254b21cd3fa23631ba837048cde07de1a4959369044e56ebf17fc0dc63de83",
+    "fold3_linear_OLS_summary.txt": "a5fc452ad1135495480103b163634c7f1419e93ae7eb3e27e122348ce26f9497",
+    "fold2_quadratic_OLS_summary.txt": "5e6a84df7000d8f83e53fcb643ad227c4fd16dd1714a02a798bac705f32552aa",
+    "fold3_actual_and_gap.png": "0ff16ef366c96bc0e6635214ab1af0a685151be8d6718bae17359397889738b9",
+    "calibration_source.py": "af6818be03aa6003f88de23879e304ed54234f5928b5d5a72f2f486cb4305ba8",
+    "Fold3_highlight.csv": "8d2467c3ceeba984ecacf1132db216c7016a0b5761d9f70e88a6439df6eff538",
+    "verification.json": "4df0e914f35ed23a94a1263c4e5a591a6028a51c894c8f89df997f8c9081a54f",
+    "fold4_quadratic_OLS_summary.txt": "88f5b2b557b73e2d3e4bf3f1a8489079498843896e544e406fb7acbf5c14f5d6",
+    "Fitted_curve_grid.csv": "79392e571453c845136e903775042d1d974d4c1491ac72e7bc09362df7765577",
+    "Predictions.csv.gz": "075fda04507a32876c9004169917e7272d79258a986df2f9e4eb3e973b41687d",
+    "calibration_fitted_lines.png": "0dec3501b284bf89f65d8c81be11caaec1815daaa0846b2abf3533f455dbf7a0",
+    "calibrator_parameters.json": "011f8c5be21807d709124b4b3c16363e6e677716d94395f97f968377630c27bc",
+    "fold4_cubic_OLS_summary.txt": "31189c992f915368b0301403f7f58b7e8dde177ee9198ce16217264a9604ab7d",
+    "fold2_linear_OLS_summary.txt": "00bad81e68c654a673770906ef31bccd82e8736a7594d817e1d8d482bbbcf485",
+    "Regression_statistics.csv": "b692551c1eb19099aa8728ece9a74205ae619b584fccab3dc50efc185e336431",
+    "fold1_quadratic_OLS_summary.txt": "894da0337ccdad3c41e1ec42b9b1a60778fc9ff7625d9bffbaadb21fbbba2ba0",
+    "Regression_coefficients.csv": "cfbf36c02437dd5ec22c9f9ba800ad93b0382d979a985f65c23877fd5c4794f0",
+    "fold2_cubic_OLS_summary.txt": "18e9204e1f261d7f9b0cbc30948505028f41c1b7297ef9d07930907ec573b115"
+  }
+}

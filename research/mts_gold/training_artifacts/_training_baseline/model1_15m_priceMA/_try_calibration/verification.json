@@ -1,0 +1,21 @@
+{
+  "calibrators_verified": 16,
+  "coefficient_rows": 72,
+  "regression_statistic_rows": 16,
+  "worksheet_count": 11,
+  "prediction_rows": 224427,
+  "later_evaluation_rows_per_method": {
+    "MA_persistence": 15973,
+    "cubic": 15973,
+    "isotonic": 15973,
+    "linear": 15973,
+    "quadratic": 15973,
+    "structural_persistence": 15973,
+    "uncalibrated": 15973
+  },
+  "calibration_fit_labels_mature_before_evaluation": true,
+  "model_prediction_max_reconstruction_error": 1.4551915228366852e-11,
+  "source_predictions_unchanged": true,
+  "all_artifact_hashes_valid": true,
+  "unit_tests_passed": 53
+}

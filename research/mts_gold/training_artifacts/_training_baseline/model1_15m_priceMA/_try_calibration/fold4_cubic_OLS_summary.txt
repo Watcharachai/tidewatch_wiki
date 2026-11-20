@@ -1,0 +1,56 @@
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.518
+Model:                            OLS   Adj. R-squared:                  0.518
+Method:                 Least Squares   F-statistic:                     1442.
+Date:                Fri, 20 Nov 2026   Prob (F-statistic):               0.00
+Time:                        03:08:19   Log-Likelihood:                -36068.
+No. Observations:                4024   AIC:                         7.214e+04
+Df Residuals:                    4020   BIC:                         7.217e+04
+Df Model:                           3
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       6.571e+04     37.859   1735.717      0.000    6.56e+04    6.58e+04
+x1          3060.9430     54.238     56.435      0.000    2954.607    3167.279
+x2           977.5414     62.542     15.630      0.000     854.925    1100.158
+x3            79.8841     11.591      6.892      0.000      57.160     102.609
+==============================================================================
+Omnibus:                      496.260   Durbin-Watson:                   0.008
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              890.880
+Skew:                           0.813   Prob(JB):                    3.53e-194
+Kurtosis:                       4.635   Cond. No.                         62.0
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+HAC covariance summary
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.518
+Model:                            OLS   Adj. R-squared:                  0.518
+Method:                 Least Squares   F-statistic:                     77.98
+Date:                Fri, 20 Nov 2026   Prob (F-statistic):           5.02e-49
+Time:                        03:08:19   Log-Likelihood:                -36068.
+No. Observations:                4024   AIC:                         7.214e+04
+Df Residuals:                    4020   BIC:                         7.217e+04
+Df Model:                           3
+Covariance Type:                  HAC
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       6.571e+04    209.926    313.027      0.000    6.53e+04    6.61e+04
+x1          3060.9430    208.221     14.700      0.000    2652.714    3469.172
+x2           977.5414    244.217      4.003      0.000     498.741    1456.342
+x3            79.8841     42.772      1.868      0.062      -3.973     163.742
+==============================================================================
+Omnibus:                      496.260   Durbin-Watson:                   0.008
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              890.880
+Skew:                           0.813   Prob(JB):                    3.53e-194
+Kurtosis:                       4.635   Cond. No.                         62.0
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 30 lags and with small sample correction

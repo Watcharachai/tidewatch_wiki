@@ -1,0 +1,2 @@
+-r requirements-model1-15m.txt
+statsmodels>=0.14,<0.15
