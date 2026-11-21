@@ -1,0 +1,5 @@
+model,column,DEV_rows,residual_P025,residual_P05,residual_P95,residual_P975,width_90,width_95,estimated_from
+Isotonic,prediction_isotonic,4030,-2167.9722477063974,-1827.7227881412778,1880.812448132754,2120.693946731233,3708.535236274032,4288.66619443763,Actual minus prediction on original DEV fit rows only; approximate in-sample residual bands
+Linear,prediction_linear,4030,-1964.879759256659,-1766.542762607304,1970.2805840997219,2206.9019409461866,3736.823346707026,4171.781700202846,Actual minus prediction on original DEV fit rows only; approximate in-sample residual bands
+Structural persistence,structural_persistence,4030,-50.910000000001304,-37.109999999998394,35.0,48.45500000000395,72.1099999999984,99.36500000000525,Actual minus prediction on original DEV fit rows only; approximate in-sample residual bands
+Uncalibrated LightGBM,prediction_lightgbm,4030,-529.9631663986622,-270.4051307629836,3590.9202271000026,3710.9184424476643,3861.3253578629865,4240.881608846326,Actual minus prediction on original DEV fit rows only; approximate in-sample residual bands

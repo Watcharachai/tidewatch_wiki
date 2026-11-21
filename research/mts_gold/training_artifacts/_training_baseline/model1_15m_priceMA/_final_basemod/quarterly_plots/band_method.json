@@ -1,0 +1,25 @@
+{
+  "percentiles": [
+    0.025,
+    0.05,
+    0.95,
+    0.975
+  ],
+  "reference_period": "DEV",
+  "reference_rows": 4030,
+  "construction": "prediction + frozen empirical DEV residual percentile",
+  "confidence_interval_for_mean": false,
+  "nominal_coverage_guaranteed": false,
+  "timezone": "Asia/Bangkok",
+  "charts": [
+    "2025Q1_actual_vs_models.png",
+    "2025Q2_actual_vs_models.png",
+    "2025Q3_actual_vs_models.png",
+    "2025Q4_actual_vs_models.png",
+    "2026Q1_actual_vs_models.png",
+    "2026Q2_actual_vs_models.png",
+    "2026Q3_actual_vs_models.png",
+    "2026Q4_actual_vs_models.png",
+    "DEV_actual_vs_models.png"
+  ]
+}

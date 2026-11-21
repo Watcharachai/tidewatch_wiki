@@ -9,10 +9,23 @@
   "base_training_rows": 24087,
   "calibration_DEV_rows": 4030,
   "OOT1_rows": 4001,
-  "notebook_code_cells_executed": 3,
+  "notebook_code_cells_executed": 7,
   "notebook_errors": 0,
   "desktop_inference_requires_original_repository": false,
   "all_periods_are_development_backcasts_or_previously_inspected_backtests": true,
   "base_validation_rows": 8062,
-  "isolated_extracted_archive_inference_passed": true
+  "isolated_extracted_archive_inference_passed": true,
+  "quarterly_plots_update_verified": {
+    "quarterly_charts": 8,
+    "DEV_charts": 1,
+    "pairwise_model_panels": 36,
+    "numeric_bound_rows": 171212,
+    "coverage_rows": 36,
+    "frozen_DEV_residual_quantiles_verified": true,
+    "nested_90_and_95_bands_verified": true,
+    "original_models_and_predictions_unchanged": true,
+    "notebook_executed_code_cells": 7,
+    "notebook_error_outputs": 0,
+    "workbook_sheets": 12
+  }
 }

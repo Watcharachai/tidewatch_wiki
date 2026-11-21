@@ -1,0 +1,13 @@
+{
+  "quarterly_charts": 8,
+  "DEV_charts": 1,
+  "pairwise_model_panels": 36,
+  "numeric_bound_rows": 171212,
+  "coverage_rows": 36,
+  "frozen_DEV_residual_quantiles_verified": true,
+  "nested_90_and_95_bands_verified": true,
+  "original_models_and_predictions_unchanged": true,
+  "notebook_executed_code_cells": 7,
+  "notebook_error_outputs": 0,
+  "workbook_sheets": 12
+}

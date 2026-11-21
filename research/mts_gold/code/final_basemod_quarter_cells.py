@@ -1,0 +1,12 @@
+import nbformat as n
+
+def cells():
+ return [n.v4.new_markdown_cell('## Quarterly pairwise actual/predicted charts and empirical bands\n\nP05–P95 is a central90% prediction band; P2.5–P97.5 is a separate95% prediction band. They are **not confidence intervals for the conditional mean**. Every model uses its own frozen quantiles of actual-minus-prediction residuals from the original4030 DEV fit rows. Residuals are in-sample for the calibrators, so later coverage is not guaranteed. No quarterly or later outcomes set the widths. All2025 bands use2026 parameters retrospectively; they are not historical uncertainty forecasts. Quarter boundaries and chart axes use Asia/Bangkok decision times; actual is next-bar MA5. Each chart contains four pairwise panels: isotonic, linear, structural persistence and uncalibrated LightGBM.'),
+ n.v4.new_code_cell("from pathlib import Path\nimport sys\nfrom IPython.display import display,Image\npaths=[Path.cwd(),Path.cwd()/'research/mts_gold/training_artifacts/_training_baseline/model1_15m_priceMA/_final_basemod']\npackage=next(p for p in paths if (p/'prediction_bundle.pkl').exists())\nsys.path.insert(0,str(package))\nfrom quarterly_bands import make_report\npercentiles,coverage,quarterly_charts=make_report(package)\ndisplay(percentiles)\ndisplay(coverage)\nprint('Saved Quarterly_Prediction_Bands.xlsx and per-timestamp numeric bounds in quarterly_plots/.')"),
+ n.v4.new_markdown_cell('###2025 quarterly backcasts\n\nThe base LightGBM used2025 in training. Calibrators and these residual bands were fitted later in2026. These plots are retrospective diagnostics.' .replace('###2025','### 2025')),
+ n.v4.new_code_cell("for path in quarterly_charts:\n    if path.name.startswith('2025'):\n        display(Image(filename=str(path)))"),
+ n.v4.new_markdown_cell('### 2026 quarterly views\n\nDEV and OOT1 boundaries are marked at their actual timestamps where they fall inside a quarter.2026Q4 is partial through the saved7 November snapshot. Inspect measured coverage rather than assuming nominal90/95% coverage holds.'),
+ n.v4.new_code_cell("for path in quarterly_charts:\n    if path.name.startswith('2026'):\n        display(Image(filename=str(path)))"),
+ n.v4.new_markdown_cell('### DEV calibration-fit view\n\nCoverage here describes the same residual sample used to set the widths. It is an in-sample diagnostic, not independent validation.'),
+ n.v4.new_code_cell("display(Image(filename=str(package/'quarterly_plots/DEV_actual_vs_models.png')))"),
+ ]

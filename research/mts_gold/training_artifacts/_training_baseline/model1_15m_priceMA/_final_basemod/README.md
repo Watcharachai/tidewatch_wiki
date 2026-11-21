@@ -54,3 +54,9 @@ Four of the five target prices are already known at the decision time. The struc
 Isotonic calibration clips predictions outside its fitted input range. Applying it to earlier, lower2025 prices can produce severe errors. Compare both calibrators across all labeled periods rather than interpreting the highlighted OOT1 score alone.
 
 All dates in period definitions use Asia/Bangkok. Plot axes use UTC. The package uses the latest saved snapshot; it does not fetch current prices. Paired MSE-gain CIs use1,000 circular30-row block-bootstrap samples stratified by provenance, without multiplicity correction. A positive gain favors the first named model.
+
+## Quarterly actual/predicted charts and residual bands
+
+The latest notebook includes four-model pairwise time-series panels for each quarter in2025 and2026, plus the exact DEV period.2026Q4 is partial through7 November. `quarterly_plots/` stores nine chart images, empirical coverage, model-specific DEV residual percentiles and all timestamp-level bounds. `Quarterly_Prediction_Bands.xlsx` embeds all charts and the percentile/coverage tables.
+
+Run `python quarterly_bands.py` to reproduce these outputs without refitting any model. P05–P95 is a central90% prediction band. The separate95% band uses P2.5–P97.5. They are empirical prediction bands, not confidence intervals for a conditional mean. Bounds equal the saved prediction plus frozen DEV residual percentiles. DEV residuals are in-sample for the calibrators; nominal coverage is not guaranteed on later data.2025 bands apply2026-estimated parameters retrospectively and are not uncertainty forecasts available in2025. Quarter labels and chart axes use Asia/Bangkok decision time.

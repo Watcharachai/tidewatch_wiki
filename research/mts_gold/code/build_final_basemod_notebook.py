@@ -13,6 +13,8 @@ nb=n.v4.new_notebook(cells=[
  n.v4.new_code_cell("performance,comparison=report(package)\ndisplay(performance.query(\"slice_type=='period'\"))\ndisplay(comparison.query(\"slice_type=='period' and first=='prediction_isotonic' and second=='prediction_linear'\"))\ndisplay(Image(filename=str(package/'all_time_actual_prediction.png')))"),
  n.v4.new_markdown_cell('## Data supplied for further local work\n\nbase_training_X_y.csv.gz contains the original matured fold3 base-training rows; calibration_dev_X_y.csv.gz fits the two existing calibrators; validation_oot1_X_y.csv.gz is their later evaluation; post_fold3_backtest_X_y.csv.gz covers later context. all_time_X_y_context.csv.gz is the complete prepared feature/target table. Use package_metadata.json and feature_schema.csv to preserve feature order and transformations. Future raw market data must first pass through the original feature pipeline. Never pass y_ma5, period, provenance, or label timestamps as X. Quantitative trading backtests need additional trading assumptions; this notebook forecasts MA5 prices only.')
 ])
+from final_basemod_quarter_cells import cells
+nb.cells.extend(cells())
 nb.metadata.kernelspec={'display_name':'Python3','language':'python','name':'python3'}
 path=OUT/'Final_BaseModel_Local.ipynb'
 try:NotebookClient(nb,timeout=1800,kernel_name=os.environ.get('MTS_NOTEBOOK_KERNEL','python3'),resources={'metadata':{'path':str(OUT)}}).execute()
