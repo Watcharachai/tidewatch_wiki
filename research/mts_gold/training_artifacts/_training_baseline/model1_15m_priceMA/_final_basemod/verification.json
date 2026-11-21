@@ -1,0 +1,18 @@
+{
+  "context_rows": 42803,
+  "scoreable_rows": 40226,
+  "features": 45,
+  "all_forecasts_reproduced": true,
+  "original_base_validation_forecasts_reproduced": 8062,
+  "original_calibrated_forecasts_reproduced_per_model": 8031,
+  "standalone_pickle_models_reproduced": true,
+  "base_training_rows": 24087,
+  "calibration_DEV_rows": 4030,
+  "OOT1_rows": 4001,
+  "notebook_code_cells_executed": 3,
+  "notebook_errors": 0,
+  "desktop_inference_requires_original_repository": false,
+  "all_periods_are_development_backcasts_or_previously_inspected_backtests": true,
+  "base_validation_rows": 8062,
+  "isolated_extracted_archive_inference_passed": true
+}

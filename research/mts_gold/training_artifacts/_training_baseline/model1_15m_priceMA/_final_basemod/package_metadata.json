@@ -1,0 +1,56 @@
+{
+  "source_file": "/workspace/tidewatch_wiki/research/mts_gold/feature_artifacts/market_features_15m.csv.gz",
+  "source_sha256": "c86355c3622c6a97139a1e9774ccff90aba6f726a6a1cfe2d9a1150d980a08b1",
+  "rows": 42803,
+  "valid_labels": 40226,
+  "snapshot_start_Bangkok": "2025-01-01 00:15:00+07:00",
+  "snapshot_end_Bangkok": "2026-11-07 05:00:00+07:00",
+  "base_fold": 3,
+  "base_training_rows": 24087,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "matplotlib": "3.10.8",
+    "openpyxl": "3.1.5",
+    "xlsxwriter": "3.2.9",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "calibration_split": {
+    "fold": "3",
+    "fit_rows": "4030",
+    "evaluation_rows": "4001",
+    "embargo_observations": "30",
+    "fit_start_Bangkok": "2026-02-12 12:45:00+07:00",
+    "fit_end_Bangkok": "2026-04-21 22:15:00+07:00",
+    "evaluation_start_Bangkok": "2026-04-22 08:45:00+07:00",
+    "evaluation_end_Bangkok": "2026-06-26 20:15:00+07:00",
+    "fit_X_min": "64283.11866037142",
+    "fit_X_max": "77513.46833516957",
+    "evaluation_X_min": "61558.72346756154",
+    "evaluation_X_max": "71397.19446315846",
+    "evaluation_X_outside_fit_fraction": "0.1792051987003249",
+    "highlight_reason": "Highest original outer validation R2 among LightGBM folds (post-hoc descriptive highlight)"
+  },
+  "period_definitions": {
+    "ALL": "All scoreable saved rows; descriptive mix of fitted and later periods",
+    "REST_2025": "Bangkok calendar2025; base-training backcasts, calibration applied retrospectively",
+    "DEV": "Exact fold3 calibration-fit rows, 2026-02-12 to2026-04-21 Bangkok",
+    "OOT1": "Exact fold3 later calibration-evaluation rows, 2026-04-22 to2026-06-26 Bangkok",
+    "REST_2026": "All other2026 context; mixed base-training, embargo and post-fold3 backtest. Use provenance for clean slices"
+  },
+  "limitations": [
+    "No new market data fetched; latest saved snapshot only.",
+    "The original fold3 model used2025 plus early2026 for base training;2025 is not an untouched test.",
+    "Calibrators were fitted in2026 and are back-applied to earlier rows. Historical backcasts use parameters estimated later.",
+    "OOT1 and later data were already inspected in earlier project analyses; these are development/backtest results, not fresh final tests.",
+    "Predictions are next-bar trailing MA5 prices, not spot-return or trading PnL forecasts. Four of five target closes are already known.",
+    "Prepared feature CSVs include fold3-seeded historical Z lag; do not refit preprocessing or shift columns again.",
+    "Models remain frozen. The notebook loads them and reproduces predictions; retraining a different sample is a new experiment."
+  ],
+  "python_version": "3.12.14"
+}
