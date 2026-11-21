@@ -10,6 +10,7 @@ It uses the previous lag-only waterfall and nested four-fold selection/tuning pr
 - [Excel results and selection diagnostics](GLD965_15m_priceMA_Review.xlsx)
 - [DOCX report](GLD965_15m_priceMA_Report.docx) and [Markdown report](GLD965_15m_priceMA_Report.md)
 - [Predicted versus actual plots](predicted_actual.png)
+- [Consolidated LightGBM and calibration model documentation (DOCX)](model_documentation/MTS_GLD965_15m_LightGBM_Calibration_Model_Documentation.docx): data assumptions, feature selection, all 32 tuning trials, calibration statistics, frozen implementation, quarterly charts, limitations and GitHub references.
 
 Four target prices are known at decision time. The principal baseline assumes the next close equals the current close, then computes the resulting next MA. High conventional price R² alone cannot establish forecasting skill. Positive `skill_vs_structural` improves on that baseline; the paired block-bootstrap gain interval must exclude zero on the positive side.
 

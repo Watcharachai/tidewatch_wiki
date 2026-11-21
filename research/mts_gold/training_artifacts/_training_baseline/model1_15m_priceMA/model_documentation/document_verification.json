@@ -1,0 +1,13 @@
+{
+  "docx_sha256": "197ec5b1ffb51d5125ee72177a76e3ed3ee74cb8795f1ed24703276ec306ef26",
+  "rendered_pages": 27,
+  "six_requested_sections": true,
+  "embedded_figures": 10,
+  "tables": 33,
+  "commit_pinned_github_links": 27,
+  "all_45_features_present": true,
+  "all_evidence_hashes_verified": true,
+  "model_and_prediction_files_unchanged": true,
+  "visual_review": "Rendered A4 DOCX through LibreOffice; reviewed representative feature table and quarterly figure pages; adjusted column widths and removed orphan implementation page.",
+  "pdf_review_only": "PDF was generated in /tmp for layout inspection; DOCX is the deliverable."
+}

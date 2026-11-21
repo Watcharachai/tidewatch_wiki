@@ -1,0 +1,46 @@
+Order,feature,Definition,Gain %,PI ΔMSE
+1,mts_xauusd_15m_close_lag1,mts_xauusd; 15m; lagged level; K=1 source observations.,99.40344600254384,29947946.5121672
+2,us_yield_3m_1d_close_lag1,us_yield_3m; 1d; lagged level; K=1 source observations.,0.08056015681523,-3778.4447767138017
+3,us_yield_3m_1d_close_lag5,us_yield_3m; 1d; lagged level; K=5 source observations.,0.10343743260192,-299.6198128317017
+4,usdthb_1d_return_lag5,usdthb; 1d; cumulative simple return; K=5 source observations.,0.01704997882988,4175.3380361454565
+5,own_return_min15_lag1,Own log-return min over preceding 15 bars; excludes bar t.,0.00027756914952102764,-425.5228393611033
+6,usdthb_1d_return_lag1,usdthb; 1d; cumulative simple return; K=1 source observations.,0.009067475147623192,14611.446887585102
+7,own_return_variance15_lag1,Own log-return variance over preceding 15 bars; excludes bar t.,0.009111766922568997,4420.898248815536
+8,us_yield_10y_1d_close_lag5,us_yield_10y; 1d; lagged level; K=5 source observations.,0.05540882627385,-180450.13368882047
+9,mts_xauusd_15m_return_lag30,mts_xauusd; 15m; cumulative simple return; K=30 source observations.,0.002450512984795909,-2342.2131171469578
+10,nasdaq_1d_return_lag1,nasdaq; 1d; cumulative simple return; K=1 source observations.,0.004252999210904498,768.52847821787
+11,vix_1d_return_lag5,vix; 1d; cumulative simple return; K=5 source observations.,0.00788298702981224,-20299.44063406894
+12,Z_return_lag5,"Own one-bar log return / historical EWMA sigma, clipped ±5; shift 5.",0.0,0.0
+13,btcusdt_15m_return_lag1,btcusdt; 15m; cumulative simple return; K=1 source observations.,0.0,0.0
+14,btcusdt_15m_return_lag30,btcusdt; 15m; cumulative simple return; K=30 source observations.,0.0005347234218240601,-380.46883734609
+15,btcusdt_15m_return_lag5,btcusdt; 15m; cumulative simple return; K=5 source observations.,0.0,0.0
+16,btcusdt_15m_volume_lag1,btcusdt; 15m; lagged volume; K=1 source observations.,0.0004922157890193198,-9432.441185672302
+17,btcusdt_15m_volume_lag30,btcusdt; 15m; lagged volume; K=30 source observations.,0.0002161770079330589,700.1988137223292
+18,btcusdt_15m_volume_lag5,btcusdt; 15m; lagged volume; K=5 source observations.,2.8541797988455347e-05,-73.86275725541637
+19,btcusdt_1d_return_lag30,btcusdt; 1d; cumulative simple return; K=30 source observations.,0.03503525444303,-230427.39328390808
+20,djia_1d_return_lag5,djia; 1d; cumulative simple return; K=5 source observations.,0.019557886336760002,10775.837441720068
+21,mts965_15m_elapsed_min_lag5,mts965; 15m; source elapsed minutes; K=5 source observations.,0.0,0.0
+22,mts965_15m_return_lag5,mts965; 15m; cumulative simple return; K=5 source observations.,0.0,0.0
+23,mts9999_15m_elapsed_min_lag30,mts9999; 15m; source elapsed minutes; K=30 source observations.,0.00025924426380982023,-164.19279593857937
+24,mts9999_15m_elapsed_min_lag5,mts9999; 15m; source elapsed minutes; K=5 source observations.,0.0,0.0
+25,mts9999_15m_return_lag30,mts9999; 15m; cumulative simple return; K=30 source observations.,0.002001868112164269,-9820.372422260558
+26,mts_xauusd_15m_elapsed_min_lag30,mts_xauusd; 15m; source elapsed minutes; K=30 source observations.,2.644852545043238e-05,-156.9722089282237
+27,mts_xauusd_15m_return_lag5,mts_xauusd; 15m; cumulative simple return; K=5 source observations.,9.02050635840922e-05,-985.0108672458211
+28,mts_xauusd_1d_elapsed_min_lag30,mts_xauusd; 1d; source elapsed minutes; K=30 source observations.,0.04315845561647,-15714.387883799198
+29,mts_xauusd_1d_return_lag1,mts_xauusd; 1d; cumulative simple return; K=1 source observations.,0.01874413622521,-6318.428925300296
+30,mts_xauusd_1d_return_lag5,mts_xauusd; 1d; cumulative simple return; K=5 source observations.,0.14411371308287,-66001.85503056637
+31,nasdaq_1d_return_lag5,nasdaq; 1d; cumulative simple return; K=5 source observations.,0.00923026924099362,-18604.2447288984
+32,own_return_kurtosis15_lag1,Own log-return kurtosis over preceding 15 bars; excludes bar t.,5.3612278259802116e-05,435.1463657490909
+33,own_return_kurtosis7_lag1,Own log-return kurtosis over preceding 7 bars; excludes bar t.,0.0,0.0
+34,own_return_lag1,Own single-bar log return shifted 1 observed bars.,0.002052240537114689,463.5073313501198
+35,own_return_lag5,Own single-bar log return shifted 5 observed bars.,0.0,0.0
+36,own_return_mean15_lag1,Own log-return mean over preceding 15 bars; excludes bar t.,0.00033473071267682336,-1141.274179258151
+37,own_return_mean7_lag1,Own log-return mean over preceding 7 bars; excludes bar t.,0.00012569399803065504,-729.3115325603634
+38,own_return_skew15_lag1,Own log-return skew over preceding 15 bars; excludes bar t.,3.064461338265761e-05,-22.246516834152864
+39,own_return_skew7_lag1,Own log-return skew over preceding 7 bars; excludes bar t.,0.0,0.0
+40,own_return_variance7_lag1,Own log-return variance over preceding 7 bars; excludes bar t.,0.000547654250925662,-1074.5255163461902
+41,us_yield_10y_1d_return_lag1,us_yield_10y; 1d; cumulative simple return; K=1 source observations.,0.006663299636945079,40535.0987268094
+42,us_yield_2y_1d_return_lag1,us_yield_2y; 1d; cumulative simple return; K=1 source observations.,0.0008617686682630922,-579.954561815504
+43,us_yield_2y_1d_return_lag5,us_yield_2y; 1d; cumulative simple return; K=5 source observations.,0.02126880463038,-54073.52025766447
+44,us_yield_30y_1d_elapsed_min_lag1,us_yield_30y; 1d; source elapsed minutes; K=1 source observations.,0.00098480766584726,1718.8857473195997
+45,us_yield_30y_1d_elapsed_min_lag5,us_yield_30y; 1d; source elapsed minutes; K=5 source observations.,0.0006418965710777173,-8869.961899192724
