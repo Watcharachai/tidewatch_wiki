@@ -1,0 +1,47 @@
+feature,definition
+log_return_lag0,"Own single-bar log return, shift in observed rows; current completed bar allowed."
+log_return_lag1,"Own single-bar log return, shift in observed rows; current completed bar allowed."
+log_return_lag5,"Own single-bar log return, shift in observed rows; current completed bar allowed."
+log_return_lag30,"Own single-bar log return, shift in observed rows; current completed bar allowed."
+vol5,Sample standard deviation of completed contiguous own returns.
+momentum5,Sum of own log returns over completed window.
+price_to_ma5,Relative price/MA gap; contiguous window.
+vol7,Sample standard deviation of completed contiguous own returns.
+momentum7,Sum of own log returns over completed window.
+return_min7,"Completed own returns: min, window 7; pandas kurt is excess."
+return_max7,"Completed own returns: max, window 7; pandas kurt is excess."
+return_skew7,"Completed own returns: skew, window 7; pandas kurt is excess."
+return_kurt7,"Completed own returns: kurt, window 7; pandas kurt is excess."
+variance7,Sample variance; retained initially to audit redundancy.
+price_to_ma7,Relative price/MA gap; contiguous window.
+vol15,Sample standard deviation of completed contiguous own returns.
+momentum15,Sum of own log returns over completed window.
+return_min15,"Completed own returns: min, window 15; pandas kurt is excess."
+return_max15,"Completed own returns: max, window 15; pandas kurt is excess."
+return_skew15,"Completed own returns: skew, window 15; pandas kurt is excess."
+return_kurt15,"Completed own returns: kurt, window 15; pandas kurt is excess."
+variance15,Sample variance; retained initially to audit redundancy.
+price_to_ma15,Relative price/MA gap; contiguous window.
+vol30,Sample standard deviation of completed contiguous own returns.
+momentum30,Sum of own log returns over completed window.
+return_min30,"Completed own returns: min, window 30; pandas kurt is excess."
+return_max30,"Completed own returns: max, window 30; pandas kurt is excess."
+return_skew30,"Completed own returns: skew, window 30; pandas kurt is excess."
+return_kurt30,"Completed own returns: kurt, window 30; pandas kurt is excess."
+variance30,Sample variance; retained initially to audit redundancy.
+price_to_ma30,Relative price/MA gap; contiguous window.
+bar_range,Current completed high-low divided by close.
+body,Completed bar body relative to open.
+hour_sin,Bangkok time cyclical encoding.
+hour_cos,Bangkok time cyclical encoding.
+elapsed_minutes,Elapsed since previous MTS bar.
+session_open,Previous bar not contiguous.
+mts_xauusd_15m_return_lag1,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+mts_xauusd_15m_return_lag5,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+mts_xauusd_15m_return_lag30,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+btcusdt_15m_return_lag1,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+btcusdt_15m_return_lag5,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+btcusdt_15m_return_lag30,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+mts9999_15m_return_lag1,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+mts9999_15m_return_lag5,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."
+mts9999_15m_return_lag30,"Inherited cumulative simple source return, already shifted one MTS row; NOT an own log-return lag."

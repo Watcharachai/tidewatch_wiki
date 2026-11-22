@@ -1,0 +1,10 @@
+{
+  "metric_rows": 140,
+  "prediction_rows": 1069950,
+  "horizons": 5,
+  "folds": 4,
+  "independent_label_formula_check": true,
+  "residual_reconstruction_check": true,
+  "feature_gain_normalization": true,
+  "notebook_executed": true
+}

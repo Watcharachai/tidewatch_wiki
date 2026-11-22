@@ -1,0 +1,2 @@
+rows,eligible,features,start,end,source,sha256
+42803,38200,46,2024-12-31 17:15:00+00:00,2026-11-06 22:00:00+00:00,/workspace/tidewatch_wiki/research/mts_gold/training_artifacts/_training_baseline/model1_15m_priceMA/prepared_X_y_context.csv.gz,32a54a7ea2346de99359c7347cd6f184ea3af23b8282509608b117cdf6348844
