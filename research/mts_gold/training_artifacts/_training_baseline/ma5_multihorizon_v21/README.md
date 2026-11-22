@@ -27,3 +27,5 @@ python -m pip install -r ../ma5_multihorizon_v2/requirements.txt
 python experiment.py
 python build_notebook.py
 ```
+
+Monthly classification accuracy, positive precision and recall by horizon, plus OOT actual-price charts with direction errors, are in [monthly_classification](monthly_classification/README.md). Run `python monthly_classification.py` to regenerate them from the frozen predictions.
