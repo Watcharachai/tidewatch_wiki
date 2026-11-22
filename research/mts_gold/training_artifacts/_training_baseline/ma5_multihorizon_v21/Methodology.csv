@@ -1,0 +1,12 @@
+item,value
+source,/workspace/tidewatch_wiki/research/mts_gold/training_artifacts/_training_baseline/model1_15m_priceMA/prepared_X_y_context.csv.gz
+source_sha256,32a54a7ea2346de99359c7347cd6f184ea3af23b8282509608b117cdf6348844
+oot_start_rule,Latest saved decision time minus two Bangkok calendar months; fixed before modeling.
+oot_cutoff,2026-09-06 22:00:00+00:00
+split,"70%/30% of pre-OOT common eligible rows, chronological; train labels purged at TEST start; TEST labels mature before OOT cutoff."
+target,"Next trailing MA5 at h=1..5, all common rows have 5 future contiguous 15m bars."
+regression,Predict normalized residual (Y-structural)/current close; reconstruct price.
+classification,"1 if future MA5>current observed MA5, else 0; threshold p>0.5."
+feature_gate,At least 3 features with each >=5% of LightGBM total training gain; diagnostic only.
+model,Fixed v2 hyperparameters; no model selection on OOT; previously inspected 2026 means OOT is not pristine.
+parameters,"{""n_estimators"": 150, ""learning_rate"": 0.03, ""max_depth"": 3, ""num_leaves"": 7, ""min_child_samples"": 150, ""colsample_bytree"": 0.7, ""reg_lambda"": 10, ""random_state"": 42, ""n_jobs"": 1, ""verbosity"": -1}"
