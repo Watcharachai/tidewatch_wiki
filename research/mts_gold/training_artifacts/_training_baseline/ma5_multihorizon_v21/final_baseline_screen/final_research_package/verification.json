@@ -1,0 +1,19 @@
+{
+  "partition_rows": {
+    "TRAIN": 24194,
+    "TEST": 10372,
+    "OOT": 3629
+  },
+  "base_models": 10,
+  "calibrators": 40,
+  "archived_notebooks": 4,
+  "notebook_executed": true,
+  "plots": 25,
+  "excel_sheets": 47,
+  "docx_figures": 25,
+  "source_model_hashes_identical": true,
+  "source_calibration_metrics_reproduced": true,
+  "monthly_confusion_counts_and_weighted_metrics_reconciled": true,
+  "probabilities_and_classes_consistent": true,
+  "model_refits": false
+}

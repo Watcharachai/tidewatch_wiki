@@ -37,3 +37,5 @@ All ten meet the gain and stability rules. The paired circular 30-row bootstrap,
 - `screen.py` and `validate_selected.py`: reproducible training, selection and validation.
 
 This OOT period was inspected in earlier research. The design rules do not address that reuse. A future untouched prospective sample is necessary before any predictive-skill claim or deployment decision.
+
+The consolidated [final research package](final_research_package/README.md) bundles the datasets, model/calibrator pickles, notebooks, requested 3.1–3.10 Excel analysis, monthly plots and DOCX documentation for local review.
