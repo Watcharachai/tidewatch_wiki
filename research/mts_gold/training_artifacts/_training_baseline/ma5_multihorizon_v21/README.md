@@ -31,3 +31,5 @@ python build_notebook.py
 Monthly classification accuracy, positive precision and recall by horizon, plus OOT actual-price charts with direction errors, are in [monthly_classification](monthly_classification/README.md). Run `python monthly_classification.py` to regenerate them from the frozen predictions.
 
 The [parameter review](parameter_review/README.md) lists all original horizon-specific fitted model settings and a small TEST-selected tuning experiment, including selected bundles and OOT comparisons.
+
+The [compact-feature final baseline assessment](final_baseline_screen/README.md) applies the 5%/70% gain limits and a declared train/test/OOT stability screen, with paired OOT comparison to structural persistence. It records both compliant research candidates and horizons that cannot be finalized under the requested constraints.
